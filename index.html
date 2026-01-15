@@ -15,6 +15,7 @@
     <meta property="og:type" content="website">
     <title>Grace Hope Initiative - Reavivando a Esperança para Moçambique</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/contact_styles.css">
     <link rel="icon" type="image/png" href="assets/images/logo.png">
     <!-- AOS Animation Library -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -34,7 +35,7 @@
       ],
       "contactPoint": {
         "@type": "ContactPoint",
-        "telephone": "+258-84-123-4567",
+        "telephone": "+258-84-391-1691",
         "contactType": "customer service",
         "areaServed": "MZ",
         "availableLanguage": ["Portuguese", "English"]
@@ -56,27 +57,44 @@
             </div>
             <button class="menu-toggle" id="menuToggle">☰</button>
             <ul class="nav-links" id="navLinks">
-                <li><a href="#home">Início</a></li>
-                <li><a href="#about">Sobre Nós</a></li>
-                <li><a href="#values">Valores</a></li>
-                <li><a href="#services">O Que Fazemos</a></li>
-                <li><a href="#gallery">Galeria</a></li>
-                <li><a href="#testimonials">Testemunhos</a></li>
-                <li><a href="#stories">Histórias</a></li>
-                <li><a href="#help">Ajude-nos</a></li>
+                <li><a href="#home" data-i18n="nav.home">Início</a></li>
+                <li><a href="#about" data-i18n="nav.about">Sobre Nós</a></li>
+                <li><a href="#values" data-i18n="nav.values">Valores</a></li>
+                <li><a href="#services" data-i18n="nav.services">O Que Fazemos</a></li>
+                <li><a href="#stories" data-i18n="nav.stories">Histórias</a></li>
+                <li><a href="#help" data-i18n="nav.help">Ajude-nos</a></li>
+                <li class="nav-actions">
+                    <button id="themeToggle" class="icon-btn" aria-label="Toggle Dark Mode">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    <button id="langToggle" class="lang-btn" aria-label="Switch Language">
+                        EN
+                    </button>
+                </li>
             </ul>
         </nav>
     </header>
 
     <!-- Hero Section -->
+    <!-- Hero Section -->
     <section id="home" class="hero">
-        <div class="hero-content" data-aos="fade-up" data-aos-duration="1200">
-            <h1>Reavivando a Esperança para Moçambique</h1>
-            <p>Capacitando comunidades marginalizadas em Moçambique através de assistência humanitária,
-                advocacia e desenvolvimento sustentável.</p>
-            <div class="cta-buttons">
-                <button onclick="openDonateModal()" class="btn btn-primary">Doar Agora</button>
-                <a href="#about" class="btn btn-secondary">Saiba Mais</a>
+        <div class="hero-container">
+            <div class="hero-text" data-aos="fade-right" data-aos-duration="1200">
+                <h1 data-i18n="hero.title">Reavivando a Esperança para Moçambique</h1>
+                <p data-i18n="hero.subtitle">Capacitando comunidades marginalizadas em Moçambique através de assistência
+                    humanitária,
+                    advocacia e desenvolvimento sustentável.</p>
+                <div class="cta-buttons">
+                    <button onclick="openDonateModal()" class="btn btn-primary" data-i18n="hero.donate">Doar
+                        Agora</button>
+                    <a href="#about" class="btn btn-secondary" data-i18n="hero.learn_more">Saiba Mais</a>
+                </div>
+            </div>
+            <div class="hero-image-wrapper" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="200">
+                <div class="image-frame">
+                    <img src="assets/images/hero_hope.png" alt="Children Smiling - Hope for Mozambique"
+                        class="hero-img">
+                </div>
             </div>
         </div>
     </section>
@@ -84,32 +102,36 @@
     <!-- About Section -->
     <section id="about" class="container">
         <div class="section">
-            <h2 class="section-title" data-aos="fade-right">Sobre Nós</h2>
-            <p class="section-subtitle">
+            <h2 class="section-title" data-aos="fade-right" data-i18n="about.title">Sobre Nós</h2>
+            <p class="section-subtitle" data-i18n="about.subtitle">
                 A Grace Hope Initiative (GHI) é uma organização sem fins lucrativos sediada em África, criada para
                 reacender a esperança nas comunidades carenciadas e empobrecidas.
             </p>
 
             <div class="about-text">
-                <h3>Quem Somos</h3>
-                <p>Trabalhamos para criar e proporcionar oportunidades onde jovens africanos marginalizados e mulheres
+                <h3 data-i18n="about.who_we_are">Quem Somos</h3>
+                <p data-i18n="about.p1">Trabalhamos para criar e proporcionar oportunidades onde jovens africanos
+                    marginalizados e mulheres
                     vulneráveis possam ousar <strong>ACREDITAR NA ESPERANÇA</strong> e tornar os seus <strong>SONHOS
                         REALIDADE</strong>.</p>
-                <p>Através de parcerias com organizações internacionais, comunidades locais, instituições governamentais
+                <p data-i18n="about.p2">Através de parcerias com organizações internacionais, comunidades locais,
+                    instituições governamentais
                     e filantropos, buscamos garantir que ninguém fique para trás na construção de um futuro mais justo e
                     próspero.</p>
             </div>
 
             <div class="vision-mission-grid" style="margin-top: 2rem;">
                 <div class="vm-card">
-                    <h3>Nossa Visão</h3>
-                    <p>Trazer ESPERANÇA às pessoas mais marginalizadas, particularmente crianças, jovens raparigas e
+                    <h3 data-i18n="about.vision">Nossa Visão</h3>
+                    <p data-i18n="about.vision_desc">Trazer ESPERANÇA às pessoas mais marginalizadas, particularmente
+                        crianças, jovens raparigas e
                         mulheres em Moçambique, proporcionando assistência significativa e apoio para
                         criar impacto sustentável nas suas comunidades.</p>
                 </div>
                 <div class="vm-card">
-                    <h3>Nossa Missão</h3>
-                    <p>Capacitar e valorizar todas as crianças, jovens, mulheres e comunidades carenciadas em Moçambique
+                    <h3 data-i18n="about.mission">Nossa Missão</h3>
+                    <p data-i18n="about.mission_desc">Capacitar e valorizar todas as crianças, jovens, mulheres e
+                        comunidades carenciadas em Moçambique
                         que são vítimas de pobreza, desigualdade, discriminação e abuso, garantindo o
                         seu acesso a uma vida digna, direitos humanos básicos e oportunidades para prosperar.</p>
                 </div>
@@ -120,30 +142,35 @@
     <!-- Values Section -->
     <section id="values" class="container">
         <div class="section">
-            <h2 class="section-title" data-aos="fade-right">Nossos Valores</h2>
-            <p class="section-subtitle" data-aos="fade-left">Estes são os pilares que guiam todas as nossas ações e
+            <h2 class="section-title" data-aos="fade-right" data-i18n="values.title">Nossos Valores</h2>
+            <p class="section-subtitle" data-aos="fade-left" data-i18n="values.subtitle">Estes são os pilares que guiam
+                todas as nossas ações e
                 decisões</p>
             <div class="values-grid">
                 <div class="value-card">
                     <div class="value-icon">💡</div>
-                    <h3>Inspiração</h3>
-                    <p>Inspiramos confiança nos marginalizados e esperança nos menos privilegiados para acreditar num
+                    <h3 data-i18n="values.inspiration">Inspiração</h3>
+                    <p data-i18n="values.inspiration_desc">Inspiramos confiança nos marginalizados e esperança nos menos
+                        privilegiados para acreditar num
                         futuro brilhante.</p>
                 </div>
                 <div class="value-card">
                     <div class="value-icon">🤝</div>
-                    <h3>Compromisso</h3>
-                    <p>Colocamos a nossa missão no centro dos projetos e atividades da nossa organização.</p>
+                    <h3 data-i18n="values.commitment">Compromisso</h3>
+                    <p data-i18n="values.commitment_desc">Colocamos a nossa missão no centro dos projetos e atividades
+                        da nossa organização.</p>
                 </div>
                 <div class="value-card">
                     <div class="value-icon">💎</div>
-                    <h3>Lealdade</h3>
-                    <p>A qualidade é o motor do nosso desempenho. Buscamos a excelência em tudo o que fazemos.</p>
+                    <h3 data-i18n="values.loyalty">Lealdade</h3>
+                    <p data-i18n="values.loyalty_desc">A qualidade é o motor do nosso desempenho. Buscamos a excelência
+                        em tudo o que fazemos.</p>
                 </div>
                 <div class="value-card">
                     <div class="value-icon">⭐</div>
-                    <h3>Excelência</h3>
-                    <p>Mantemos os mais altos padrões ao servir comunidades vulneráveis.</p>
+                    <h3 data-i18n="values.excellence">Excelência</h3>
+                    <p data-i18n="values.excellence_desc">Mantemos os mais altos padrões ao servir comunidades
+                        vulneráveis.</p>
                 </div>
             </div>
         </div>
@@ -152,62 +179,67 @@
     <!-- Services Section -->
     <section id="services" class="container">
         <div class="section">
-            <h2 class="section-title" data-aos="fade-down">O Que Fazemos</h2>
-            <p class="section-subtitle" data-aos="fade-up">Trabalhamos em parceria com comunidades, governos e
+            <h2 class="section-title" data-aos="fade-down" data-i18n="services.title">O Que Fazemos</h2>
+            <p class="section-subtitle" data-aos="fade-up" data-i18n="services.subtitle">Trabalhamos em parceria com
+                comunidades, governos e
                 organizações para criar
                 impacto real e duradouro</p>
 
             <div class="services-grid" data-aos="fade-up">
                 <div class="service-card">
                     <div class="service-icon">🤝</div>
-                    <h3>Ajuda Humanitária e Socorro</h3>
-                    <p>Prestamos auxílio a pessoas afetadas por desastres naturais, fome, deslocação forçada e outras
+                    <h3 data-i18n="services.service1_title">Ajuda Humanitária e Socorro</h3>
+                    <p data-i18n="services.service1_desc">Prestamos auxílio a pessoas afetadas por desastres naturais,
+                        fome, deslocação forçada e outras
                         crises.</p>
                 </div>
                 <div class="service-card">
                     <div class="service-icon">📢</div>
-                    <h3>Advocacia pelos Sem Voz</h3>
-                    <p>Aumentamos a consciencialização, educamos e informamos o público sobre questões sociais
+                    <h3 data-i18n="services.service2_title">Advocacia pelos Sem Voz</h3>
+                    <p data-i18n="services.service2_desc">Aumentamos a consciencialização, educamos e informamos o
+                        público sobre questões sociais
                         pertinentes.</p>
                 </div>
                 <div class="service-card">
                     <div class="service-icon">🌱</div>
-                    <h3>Desenvolvimento Sustentável</h3>
-                    <p>Investigamos, desenvolvemos e implementamos projetos que abordam os ODS das Nações Unidas.</p>
+                    <h3 data-i18n="services.service3_title">Desenvolvimento Sustentável</h3>
+                    <p data-i18n="services.service3_desc">Investigamos, desenvolvemos e implementamos projetos que
+                        abordam os ODS das Nações Unidas.</p>
                 </div>
             </div>
 
             <!-- Áreas de Atuação -->
-            <h3
-                style="text-align: center; color: #2c5f2d; margin-top: 3rem; margin-bottom: 1.5rem; font-size: clamp(1.3rem, 3vw, 1.8rem);">
+            <h3 style="text-align: center; color: #2c5f2d; margin-top: 3rem; margin-bottom: 1.5rem; font-size: clamp(1.3rem, 3vw, 1.8rem);"
+                data-i18n="services.areas_title">
                 Nossas Áreas de Atuação</h3>
-            <p style="text-align: center; color: #666; margin-bottom: 2rem; font-size: 0.95rem;">Trabalhamos em seis
+            <p style="text-align: center; color: #666; margin-bottom: 2rem; font-size: 0.95rem;"
+                data-i18n="services.areas_desc">Trabalhamos em seis
                 áreas essenciais para o progresso e desenvolvimento das comunidades</p>
 
             <div class="areas-grid">
                 <div class="area-card">
                     <div class="area-icon">📚</div>
-                    <h4>Educação</h4>
+                    <h4 data-i18n="services.education">Educação</h4>
                 </div>
                 <div class="area-card">
                     <div class="area-icon">💪</div>
-                    <h4>Empoderamento</h4>
+                    <h4 data-i18n="services.empowerment">Empoderamento</h4>
                 </div>
                 <div class="area-card">
                     <div class="area-icon">🍞</div>
-                    <h4>Segurança Alimentar</h4>
+                    <h4 data-i18n="services.food_security">Segurança Alimentar</h4>
                 </div>
                 <div class="area-card">
                     <div class="area-icon">🏥</div>
-                    <h4>Saúde</h4>
+                    <h4 data-i18n="services.healthcare">Saúde</h4>
                 </div>
                 <div class="area-card">
                     <div class="area-icon">⚖️</div>
-                    <h4>Igualdade de Gênero</h4>
+                    <h4 data-i18n="services.gender_equality">Igualdade de Gênero</h4>
                 </div>
                 <div class="area-card">
                     <div class="area-icon">💧</div>
-                    <h4>WASH</h4>
+                    <h4 data-i18n="services.wash">WASH</h4>
                 </div>
             </div>
         </div>
@@ -216,58 +248,59 @@
     <!-- Gallery Section -->
     <section id="gallery" class="gallery-section">
         <div style="max-width: 1400px; margin: 0 auto;">
-            <h2 class="section-title" data-aos="zoom-in">Nossas Atividades em Ação</h2>
-            <p class="section-subtitle" data-aos="zoom-in" data-aos-delay="200">Veja o impacto real que estamos a criar
+            <h2 class="section-title" data-aos="zoom-in" data-i18n="gallery.title">Nossas Atividades em Ação</h2>
+            <p class="section-subtitle" data-aos="zoom-in" data-aos-delay="200" data-i18n="gallery.subtitle">Veja o
+                impacto real que estamos a criar
                 nas comunidades</p>
             <div class="gallery-grid">
                 <div class="gallery-item">
                     <img src="assets/images/humanitarian.jpg" alt="Ajuda Humanitária - Distribuição de Alimentos"
                         loading="lazy">
                     <div class="gallery-overlay">
-                        <div class="gallery-text">Ajuda Humanitária</div>
+                        <div class="gallery-text" data-i18n="gallery.humanitarian">Ajuda Humanitária</div>
                     </div>
                 </div>
                 <div class="gallery-item">
                     <img src="assets/images/volunteer.jpg" alt="Voluntariado Comunitário" loading="lazy">
                     <div class="gallery-overlay">
-                        <div class="gallery-text">Voluntariado</div>
+                        <div class="gallery-text" data-i18n="gallery.volunteer">Voluntariado</div>
                     </div>
                 </div>
                 <div class="gallery-item">
                     <img src="assets/images/education.png" alt="Programas de Educação" loading="lazy">
                     <div class="gallery-overlay">
-                        <div class="gallery-text">Educação</div>
+                        <div class="gallery-text" data-i18n="gallery.education">Educação</div>
                     </div>
                 </div>
                 <div class="gallery-item">
                     <img src="assets/images/empowerment.jpg" alt="Empoderamento de Mulheres" loading="lazy">
                     <div class="gallery-overlay">
-                        <div class="gallery-text">Empoderamento</div>
+                        <div class="gallery-text" data-i18n="gallery.empowerment">Empoderamento</div>
                     </div>
                 </div>
                 <div class="gallery-item">
                     <img src="assets/images/health.jpg" alt="Serviços de Saúde" loading="lazy">
                     <div class="gallery-overlay">
-                        <div class="gallery-text">Saúde</div>
+                        <div class="gallery-text" data-i18n="gallery.health">Saúde</div>
                     </div>
                 </div>
                 <div class="gallery-item">
                     <img src="https://www.unicef.org/wca/sites/unicef.org.wca/files/styles/hero_extended/public/wca-programme-wash-UN055942.jpg.webp?itok=wA5DHVNP"
                         alt="Projetos WASH" loading="lazy">
                     <div class="gallery-overlay">
-                        <div class="gallery-text">WASH</div>
+                        <div class="gallery-text" data-i18n="services.wash">WASH</div>
                     </div>
                 </div>
                 <div class="gallery-item">
                     <img src="assets/images/disaster.jpg" alt="Resposta a Desastres" loading="lazy">
                     <div class="gallery-overlay">
-                        <div class="gallery-text">Emergências</div>
+                        <div class="gallery-text" data-i18n="gallery.emergency">Emergências</div>
                     </div>
                 </div>
                 <div class="gallery-item">
                     <img src="assets/images/children.jpg" alt="Apoio a Crianças Vulneráveis" loading="lazy">
                     <div class="gallery-overlay">
-                        <div class="gallery-text">Crianças</div>
+                        <div class="gallery-text" data-i18n="gallery.children">Crianças</div>
                     </div>
                 </div>
             </div>
@@ -277,47 +310,51 @@
     <!-- Testimonials Section -->
     <section id="testimonials" class="testimonials-section">
         <div style="max-width: 1400px; margin: 0 auto;">
-            <h2 class="section-title" style="color: white;">Testemunhos de Impacto</h2>
-            <p class="section-subtitle" style="color: rgba(255,255,255,0.8);">Ouça as histórias de quem foi transformado
+            <h2 class="section-title" style="color: white;" data-i18n="testimonials.title">Testemunhos de Impacto</h2>
+            <p class="section-subtitle" style="color: rgba(255,255,255,0.8);" data-i18n="testimonials.subtitle">Ouça as
+                histórias de quem foi transformado
                 pela Grace Hope Initiative</p>
             <div class="testimonials-grid">
                 <div class="testimonial-card">
                     <div class="stars">★★★★★</div>
-                    <p class="testimonial-text">"A Grace Hope Initiative mudou a vida da minha família. Quando perdemos
+                    <p class="testimonial-text" data-i18n="testimonials.t1">"A Grace Hope Initiative mudou a vida da
+                        minha família. Quando perdemos
                         tudo na enchente, eles estavam lá para nos ajudar. Hoje, meus filhos estão na escola graças ao
                         apoio deles."</p>
                     <div class="testimonial-author">
                         <div class="author-avatar">MJ</div>
                         <div class="author-info">
                             <h4>Maria João</h4>
-                            <p>Mãe de 3 filhos, Maputo</p>
+                            <p data-i18n="testimonials.mother">Mãe de 3 filhos, Maputo</p>
                         </div>
                     </div>
                 </div>
 
                 <div class="testimonial-card">
                     <div class="stars">★★★★★</div>
-                    <p class="testimonial-text">"Participei no programa de empoderamento de mulheres e aprendi
+                    <p class="testimonial-text" data-i18n="testimonials.t2">"Participei no programa de empoderamento de
+                        mulheres e aprendi
                         competências que me permitiram iniciar o meu próprio negócio. Agora sou independente e posso
                         sustentar a minha família."</p>
                     <div class="testimonial-author">
                         <div class="author-avatar">AC</div>
                         <div class="author-info">
                             <h4>Amelia Chaves</h4>
-                            <p>Empreendedora, Inhambane</p>
+                            <p data-i18n="testimonials.entrepreneur">Empreendedora, Inhambane</p>
                         </div>
                     </div>
                 </div>
 
                 <div class="testimonial-card">
                     <div class="stars">★★★★★</div>
-                    <p class="testimonial-text">"Como voluntário, vi de perto o trabalho extraordinário que a GHI faz. A
+                    <p class="testimonial-text" data-i18n="testimonials.t3">"Como voluntário, vi de perto o trabalho
+                        extraordinário que a GHI faz. A
                         dedicação da equipa é inspiradora. Estou orgulhoso de fazer parte desta missão."</p>
                     <div class="testimonial-author">
                         <div class="author-avatar">RP</div>
                         <div class="author-info">
                             <h4>Ricardo Pereira</h4>
-                            <p>Voluntário, Sofala</p>
+                            <p data-i18n="testimonials.volunteer">Voluntário, Sofala</p>
                         </div>
                     </div>
                 </div>
@@ -326,114 +363,226 @@
     </section>
 
     <!-- Success Stories Section -->
+    <!-- Success Stories Section -->
+    <!-- Success Stories Section -->
     <section id="stories" class="stories-section">
-        <div style="max-width: 1400px; margin: 0 auto;">
-            <h2 class="section-title">Histórias de Sucesso</h2>
-            <p class="section-subtitle">Conheça as transformações reais que a Grace Hope Initiative tornou possível</p>
-            <div class="stories-grid">
-                <!-- História 1: Educação (Criança africana em escola) -->
-                <div class="story-card" data-aos="fade-up">
-                    <img src="https://images.unsplash.com/photo-1577896851231-70ef18881754?q=80&w=1000&auto=format&fit=crop"
-                        alt="Estudantes africanos na escola" class="story-image" loading="lazy">
-                    <div class="story-content">
-                        <div class="story-info-wrapper">
-                            <h3>De Criança de Rua a Estudante</h3>
-                            <p>Quando conhecemos o João, ele vivia nas ruas de Maputo. Através do nosso programa,
-                                conseguimos resgatá-lo.</p>
-                            <div class="story-highlight">
-                                <strong>Hoje:</strong> João está no 5º ano com excelentes notas.
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <div class="stories-container">
+            <h2 class="section-title" data-i18n="stories.title">Histórias de Sucesso</h2>
+            <p class="section-subtitle" data-i18n="stories.subtitle">Conheça as transformações reais que a Grace Hope
+                Initiative tornou possível</p>
 
-                <!-- História 2: Empoderamento (Mercado local) -->
-                <div class="story-card" data-aos="fade-up" data-aos-delay="100">
-                    <img src="https://images.unsplash.com/photo-1628155930542-3c7a64e2c833?q=80&w=1000&auto=format&fit=crop"
-                        alt="Mulher no mercado moçambicano" class="story-image" loading="lazy">
-                    <div class="story-content">
-                        <div class="story-info-wrapper">
-                            <h3>Independência Financeira</h3>
-                            <p>Fátima, mãe solteira, aprendeu gestão de negócios e culinária através dos nossos
-                                workshops.</p>
-                            <div class="story-highlight">
-                                <strong>Hoje:</strong> Dona de um restaurante que emprega 5 pessoas.
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <!-- Scrolling Track Container -->
+            <div class="stories-scroll-wrapper">
+                <div class="stories-track">
 
-                <!-- História 3: Água (Comunidade rural, poço) -->
-                <div class="story-card" data-aos="fade-up" data-aos-delay="200">
-                    <img src="https://images.unsplash.com/photo-1541913295-23aa4fd909cf?q=80&w=1000&auto=format&fit=crop"
-                        alt="Água na comunidade rural" class="story-image" loading="lazy">
-                    <div class="story-content">
-                        <div class="story-info-wrapper">
-                            <h3>Água para Chokwe</h3>
-                            <p>A aldeia não tinha acesso a água potável. Construímos poços comunitários.</p>
+                    <!-- Original Stories -->
+                    <!-- Story 1: João (Education) -->
+                    <div class="story-card">
+                        <img src="assets/images/story_education.png" alt="Success Story - Education" class="story-image"
+                            loading="lazy">
+                        <div class="story-content">
+                            <h3 data-i18n="stories.story1.title">De Menino de Rua a Estudante</h3>
+                            <p data-i18n="stories.story1.desc">Quando conhecemos o João, ele tinha apenas 8 anos e vivia
+                                nas ruas de Maputo. Através do nosso programa de educação, resgatámo-lo e matriculámo-lo
+                                na escola.</p>
                             <div class="story-highlight">
-                                <strong>Hoje:</strong> Doenças hídricas reduziram 80%.
+                                <strong data-i18n="stories.result_label">Resultado:</strong> <span
+                                    data-i18n="stories.story1.result">Hoje, o João está na 5ª classe com notas
+                                    excelentes e sonha ser professor.</span>
                             </div>
                         </div>
                     </div>
-                </div>
 
-                <!-- História 4: Saúde (Criança e mãe africana) -->
-                <div class="story-card" data-aos="fade-up" data-aos-delay="300">
-                    <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?q=80&w=1000&auto=format&fit=crop"
-                        alt="Cuidados de saúde infantil" class="story-image" loading="lazy">
-                    <div class="story-content">
-                        <div class="story-info-wrapper">
-                            <h3>Saúde em Xai-Xai</h3>
-                            <p>Estabelecemos clínicas móveis para atender a população local com medicamentos e vacinas.
-                            </p>
+                    <!-- Story 2: Fátima (Empowerment) -->
+                    <div class="story-card">
+                        <img src="assets/images/story_sewing.png" alt="Success Story - Empowerment" class="story-image"
+                            loading="lazy">
+                        <div class="story-content">
+                            <h3 data-i18n="stories.story2.title">Do Desemprego à Independência</h3>
+                            <p data-i18n="stories.story2.desc">A Fátima era mãe solteira sem qualificações. Participou
+                                no nosso treino de competências e aprendeu corte e costura e gestão de negócios.</p>
                             <div class="story-highlight">
-                                <strong>Hoje:</strong> +2.000 pessoas atendidas e vacinadas.
+                                <strong data-i18n="stories.result_label">Resultado:</strong> <span
+                                    data-i18n="stories.story2.result">A Fátima é agora proprietária do seu atelier de
+                                    costura e
+                                    emprega 5 pessoas.</span>
                             </div>
                         </div>
                     </div>
+
+                    <!-- New Stories -->
+                    <!-- Story 3: Children Feeding (Feeding Program) -->
+                    <div class="story-card">
+                        <img src="assets/images/story_feeding.png" alt="Success Story - Feeding Program"
+                            class="story-image" loading="lazy">
+                        <div class="story-content">
+                            <h3 data-i18n="stories.story3.title">Nutrindo o Futuro</h3>
+                            <p data-i18n="stories.story3.desc">Centenas de crianças em bairros periféricos sofriam de
+                                malnutrição. Implementámos um programa diário de alimentação escolar.</p>
+                            <div class="story-highlight">
+                                <strong data-i18n="stories.result_label">Resultado:</strong> <span
+                                    data-i18n="stories.story3.result">Melhoria de 90% nos índices de saúde e frequência
+                                    escolar.</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Story 4: Community (WASH/Health) - Reusing previous image or general -->
+                    <div class="story-card">
+                        <img src="https://www.unicef.org/wca/sites/unicef.org.wca/files/styles/hero_extended/public/wca-programme-wash-UN055942.jpg.webp?itok=wA5DHVNP"
+                            alt="Success Story - WASH" class="story-image" loading="lazy">
+                        <div class="story-content">
+                            <h3 data-i18n="stories.story4.title">Água Limpa, Vida Nova</h3>
+                            <p data-i18n="stories.story4.desc">A comunidade de Chokwe caminhava km por água. Construímos
+                                poços acessíveis para todos.</p>
+                            <div class="story-highlight">
+                                <strong data-i18n="stories.result_label">Resultado:</strong> <span
+                                    data-i18n="stories.story4.result">Doenças reduzidas drasticamente e mais tempo para
+                                    a escola.</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Extended Story 5: Health -->
+                    <div class="story-card">
+                        <img src="https://africacdc.org/wp-content/uploads/2024/11/africa-humanitarian-aid-doctor-taking-care-patient_23-2149117857.jpg"
+                            alt="Success Story - Health" class="story-image" loading="lazy">
+                        <div class="story-content">
+                            <h3 data-i18n="stories.story5.title">Saúde ao Alcance de Todos</h3>
+                            <p data-i18n="stories.story5.desc">Clínicas móveis levam cuidados básicos a quem mais
+                                precisa em áreas remotas.</p>
+                            <div class="story-highlight">
+                                <strong data-i18n="stories.result_label">Resultado:</strong> <span
+                                    data-i18n="stories.story5.result">Milhares de consultas realizadas e vidas
+                                    salvas.</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- DUPLICATE FOR INFINITE SCROLL EFFECT (Clone of the first 3-4 items) -->
+                    <!-- Clone 1 -->
+                    <div class="story-card" aria-hidden="true">
+                        <img src="assets/images/story_education.png" alt="Success Story - Education" class="story-image"
+                            loading="lazy">
+                        <div class="story-content">
+                            <h3 data-i18n="stories.story1.title">De Menino de Rua a Estudante</h3>
+                            <p data-i18n="stories.story1.desc">Quando conhecemos o João, ele tinha apenas 8 anos e vivia
+                                nas ruas de Maputo. Através do nosso programa de educação, resgatámo-lo e matriculámo-lo
+                                na escola.</p>
+                            <div class="story-highlight">
+                                <strong data-i18n="stories.result_label">Resultado:</strong> <span
+                                    data-i18n="stories.story1.result">Hoje, o João está na 5ª classe com notas
+                                    excelentes e sonha ser professor.</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Clone 2 -->
+                    <div class="story-card" aria-hidden="true">
+                        <img src="assets/images/story_sewing.png" alt="Success Story - Empowerment" class="story-image"
+                            loading="lazy">
+                        <div class="story-content">
+                            <h3 data-i18n="stories.story2.title">Do Desemprego à Independência</h3>
+                            <p data-i18n="stories.story2.desc">A Fátima era mãe solteira sem qualificações. Participou
+                                no nosso treino de competências e aprendeu corte e costura e gestão de negócios.</p>
+                            <div class="story-highlight">
+                                <strong data-i18n="stories.result_label">Resultado:</strong> <span
+                                    data-i18n="stories.story2.result">A Fátima é agora proprietária do seu atelier de
+                                    costura e
+                                    emprega 5 pessoas.</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Clone 3 -->
+                    <div class="story-card" aria-hidden="true">
+                        <img src="assets/images/story_feeding.png" alt="Success Story - Feeding Program"
+                            class="story-image" loading="lazy">
+                        <div class="story-content">
+                            <h3 data-i18n="stories.story3.title">Nutrindo o Futuro</h3>
+                            <p data-i18n="stories.story3.desc">Centenas de crianças em bairros periféricos sofriam de
+                                malnutrição. Implementámos um programa diário de alimentação escolar.</p>
+                            <div class="story-highlight">
+                                <strong data-i18n="stories.result_label">Resultado:</strong> <span
+                                    data-i18n="stories.story3.result">Melhoria de 90% nos índices de saúde e frequência
+                                    escolar.</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Clone 4 -->
+                    <div class="story-card" aria-hidden="true">
+                        <img src="https://www.unicef.org/wca/sites/unicef.org.wca/files/styles/hero_extended/public/wca-programme-wash-UN055942.jpg.webp?itok=wA5DHVNP"
+                            alt="Success Story - WASH" class="story-image" loading="lazy">
+                        <div class="story-content">
+                            <h3 data-i18n="stories.story4.title">Água Limpa, Vida Nova</h3>
+                            <p data-i18n="stories.story4.desc">A comunidade de Chokwe caminhava km por água. Construímos
+                                poços acessíveis para todos.</p>
+                            <div class="story-highlight">
+                                <strong data-i18n="stories.result_label">Resultado:</strong> <span
+                                    data-i18n="stories.story4.result">Doenças reduzidas drasticamente e mais tempo para
+                                    a escola.</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Clone 5 -->
+                    <div class="story-card" aria-hidden="true">
+                        <img src="https://africacdc.org/wp-content/uploads/2024/11/africa-humanitarian-aid-doctor-taking-care-patient_23-2149117857.jpg"
+                            alt="Success Story - Health" class="story-image" loading="lazy">
+                        <div class="story-content">
+                            <h3 data-i18n="stories.story5.title">Saúde ao Alcance de Todos</h3>
+                            <p data-i18n="stories.story5.desc">Clínicas móveis levam cuidados básicos a quem mais
+                                precisa em áreas remotas.</p>
+                            <div class="story-highlight">
+                                <strong data-i18n="stories.result_label">Resultado:</strong> <span
+                                    data-i18n="stories.story5.result">Milhares de consultas realizadas e vidas
+                                    salvas.</span>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- SDGs Section -->
     <section class="sdgs-section">
-        <h2 class="section-title">Objetivos de Desenvolvimento Sustentável</h2>
-        <p style="text-align: center; max-width: 800px; margin: 0 auto; color: #666; font-size: 0.95rem;">A Grace Hope
+        <h2 class="section-title" data-i18n="sdgs.title">Objetivos de Desenvolvimento Sustentável</h2>
+        <p style="text-align: center; max-width: 800px; margin: 0 auto; color: #666; font-size: 0.95rem;"
+            data-i18n="sdgs.subtitle">A Grace Hope
             Initiative está comprometida em contribuir para a realização dos seguintes ODS da ONU:</p>
         <div class="sdgs-grid">
             <div class="sdg-item">
                 <div class="sdg-number">1</div>
-                <h4>Erradicação da Pobreza</h4>
+                <h4 data-i18n="sdgs.poverty">Erradicação da Pobreza</h4>
             </div>
             <div class="sdg-item">
                 <div class="sdg-number">2</div>
-                <h4>Fome Zero</h4>
+                <h4 data-i18n="sdgs.hunger">Fome Zero</h4>
             </div>
             <div class="sdg-item">
                 <div class="sdg-number">3</div>
-                <h4>Boa Saúde</h4>
+                <h4 data-i18n="sdgs.health">Boa Saúde</h4>
             </div>
             <div class="sdg-item">
                 <div class="sdg-number">4</div>
-                <h4>Educação de Qualidade</h4>
+                <h4 data-i18n="sdgs.education">Educação de Qualidade</h4>
             </div>
             <div class="sdg-item">
                 <div class="sdg-number">5</div>
-                <h4>Igualdade de Gênero</h4>
+                <h4 data-i18n="sdgs.gender">Igualdade de Gênero</h4>
             </div>
             <div class="sdg-item">
                 <div class="sdg-number">6</div>
-                <h4>Água e Saneamento</h4>
+                <h4 data-i18n="sdgs.water">Água e Saneamento</h4>
             </div>
             <div class="sdg-item">
                 <div class="sdg-number">8</div>
-                <h4>Crescimento Económico</h4>
+                <h4 data-i18n="sdgs.economic">Crescimento Económico</h4>
             </div>
             <div class="sdg-item">
                 <div class="sdg-number">10</div>
-                <h4>Redução das Desigualdades</h4>
+                <h4 data-i18n="sdgs.inequality">Redução das Desigualdades</h4>
             </div>
         </div>
     </section>
@@ -441,62 +590,68 @@
     <!-- Projects Section -->
     <section id="projects" class="container">
         <div class="section">
-            <h2 class="section-title">Nossos Projetos</h2>
-            <p class="section-subtitle">Conheça algumas das iniciativas que estão a transformar vidas em Moçambique e
+            <h2 class="section-title" data-i18n="projects.title">Nossos Projetos</h2>
+            <p class="section-subtitle" data-i18n="projects.subtitle">Conheça algumas das iniciativas que estão a
+                transformar vidas em Moçambique e
                 não só</p>
             <div class="projects-grid">
                 <div class="project-card">
                     <div class="project-header">
                         <div class="project-icon">🍽️</div>
-                        <h3>Alimentar as Crianças</h3>
+                        <h3 data-i18n="projects.food_title">Alimentar as Crianças</h3>
                     </div>
                     <div class="project-body">
-                        <p>Apoiámos 12 famílias vulneráveis durante 10 meses na pandemia de COVID-19 com necessidades
+                        <p data-i18n="projects.food_desc">Apoiámos 12 famílias vulneráveis durante 10 meses na pandemia
+                            de COVID-19 com necessidades
                             básicas.</p>
-                        <span class="project-tag">Pandemia COVID-19</span>
+                        <span class="project-tag" data-i18n="projects.covid_tag">Pandemia COVID-19</span>
                     </div>
                 </div>
                 <div class="project-card">
                     <div class="project-header">
                         <div class="project-icon">🏠</div>
-                        <h3>Iniciativa Escola em Casa</h3>
+                        <h3 data-i18n="projects.home_school_title">Iniciativa Escola em Casa</h3>
                     </div>
                     <div class="project-body">
-                        <p>Proporcionámos apoio educacional a mais de 25 crianças sem recursos para ensino à distância.
+                        <p data-i18n="projects.home_school_desc">Proporcionámos apoio educacional a mais de 25 crianças
+                            sem recursos para ensino à distância.
                         </p>
-                        <span class="project-tag">Educação Pandémica</span>
+                        <span class="project-tag" data-i18n="projects.pandemic_edu_tag">Educação Pandémica</span>
                     </div>
                 </div>
                 <div class="project-card">
                     <div class="project-header">
                         <div class="project-icon">🎄</div>
-                        <h3>Festa de Natal</h3>
+                        <h3 data-i18n="projects.christmas_title">Festa de Natal</h3>
                     </div>
                     <div class="project-body">
-                        <p>Programa de alcance comunitário em Maputo que doou alimentos e presentes a 50 crianças
+                        <p data-i18n="projects.christmas_desc">Programa de alcance comunitário em Maputo que doou
+                            alimentos e presentes a 50 crianças
                             carenciadas.</p>
-                        <span class="project-tag">Dezembro 2021</span>
+                        <span class="project-tag" data-i18n="projects.dec_2021">Dezembro 2021</span>
                     </div>
                 </div>
                 <div class="project-card">
                     <div class="project-header">
                         <div class="project-icon">💝</div>
-                        <h3>Salvar Danilo Santos</h3>
+                        <h3 data-i18n="projects.danilo_title">Salvar Danilo Santos</h3>
                     </div>
                     <div class="project-body">
-                        <p>Mobilizámos fundos de doadores para apoiar a família Santos e acompanhar o tratamento médico.
+                        <p data-i18n="projects.danilo_desc">Mobilizámos fundos de doadores para apoiar a família Santos
+                            e acompanhar o tratamento médico.
                         </p>
-                        <span class="project-tag">Ação Médica</span>
+                        <span class="project-tag" data-i18n="projects.medical_action_tag">Ação Médica</span>
                     </div>
                 </div>
                 <div class="project-card">
                     <div class="project-header">
                         <div class="project-icon">🤝</div>
-                        <h3>Companheiros da Comunidade</h3>
+                        <h3 data-i18n="projects.community_title">Companheiros da Comunidade</h3>
                     </div>
                     <div class="project-body">
-                        <p>Campanha colaborativa para erradicar a situação de sem-abrigo e a fome em Moçambique.</p>
-                        <span class="project-tag">Desde 2023</span>
+                        <p data-i18n="projects.community_desc">Campanha colaborativa para erradicar a situação de
+                            sem-abrigo e a fome em Moçambique.</p>
+                        <span class="project-tag" data-i18n="projects.since_2023">Desde 2023</span>
                     </div>
                 </div>
             </div>
@@ -506,8 +661,38 @@
     <!-- Help & Forms Section -->
     <section id="help" class="help-section">
         <div class="help-content">
-            <h2>Como Pode Ajudar</h2>
-            <p>Juntos, podemos reacender a esperança e transformar vidas</p>
+            <h2 class="section-title" style="color: white; margin-bottom: 3rem;" data-i18n="help.title">Contactos e
+                Ajuda</h2>
+
+            <!-- Contact Information Minimal Bar (Discreet) -->
+            <div class="contact-minimal-bar">
+                <div class="contact-item">
+                    <i class="fas fa-phone-alt contact-icon"></i>
+                    <div class="contact-text">
+                        <span class="contact-label" data-i18n="help.phone">Telefone / WhatsApp</span>
+                        <span class="contact-value">+258 84 391 1691</span>
+                    </div>
+                </div>
+                <div class="divider-vertical"></div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope contact-icon"></i>
+                    <div class="contact-text">
+                        <span class="contact-label" data-i18n="help.email">Email Geral</span>
+                        <span class="contact-value">gracehopeinitiative@gmail.com</span>
+                    </div>
+                </div>
+                <div class="divider-vertical"></div>
+                <div class="contact-item">
+                    <i class="fas fa-hand-holding-heart contact-icon"></i>
+                    <div class="contact-text">
+                        <span class="contact-label" data-i18n="help.donation_contact">Contacto para Doações</span>
+                        <span class="contact-value">+258 85 695 6106</span>
+                    </div>
+                </div>
+            </div>
+
+            <h2 style="margin-top: 2rem;" data-i18n="help.message_title">Envie-nos uma Mensagem</h2>
+            <p data-i18n="help.message_subtitle">Juntos, podemos reacender a esperança e transformar vidas</p>
 
             <div class="forms-container">
                 <!-- Volunteer/Contact Toggle Actions (Simplified for improved UX) -->
@@ -515,71 +700,77 @@
                     <div class="action-card"
                         onclick="document.getElementById('volunteer-form').scrollIntoView({behavior: 'smooth'})">
                         <div class="action-icon">🙋</div>
-                        <h3>Seja Voluntário</h3>
-                        <p>Junte-se à nossa equipa no terreno.</p>
+                        <h3 data-i18n="forms.volunteer_action">Seja Voluntário</h3>
+                        <p data-i18n="forms.volunteer_desc">Junte-se à nossa equipa no terreno.</p>
                     </div>
                     <div class="action-card" onclick="openDonateModal()">
                         <div class="action-icon">💰</div>
-                        <h3>Faça uma Doação</h3>
-                        <p>Apoie financeiramente os nossos projetos.</p>
+                        <h3 data-i18n="forms.donate_action">Faça uma Doação</h3>
+                        <p data-i18n="forms.donate_desc">Apoie financeiramente os nossos projetos.</p>
                     </div>
                     <div class="action-card"
                         onclick="document.getElementById('contact-form').scrollIntoView({behavior: 'smooth'})">
                         <div class="action-icon">📩</div>
-                        <h3>Fale Connosco</h3>
-                        <p>Dúvidas ou parcerias? Envie uma mensagem.</p>
+                        <h3 data-i18n="forms.contact_action">Fale Connosco</h3>
+                        <p data-i18n="forms.contact_desc">Dúvidas ou parcerias? Envie uma mensagem.</p>
                     </div>
                 </div>
 
                 <div class="forms-grid">
                     <!-- Volunteer Form -->
                     <div class="form-box" id="volunteer-form">
-                        <h3>Ficha de Inscrição de Voluntário</h3>
+                        <h3 data-i18n="forms.volunteer_title">Ficha de Inscrição de Voluntário</h3>
                         <form id="volunteerForm">
                             <div class="form-group">
-                                <label for="vol-name">Nome Completo</label>
-                                <input type="text" id="vol-name" required placeholder="Seu nome">
+                                <label for="vol-name" data-i18n="forms.name_label">Nome Completo</label>
+                                <input type="text" id="vol-name" required placeholder="Seu nome"
+                                    data-i18n="forms.name_placeholder">
                             </div>
                             <div class="form-group">
-                                <label for="vol-email">Email</label>
-                                <input type="email" id="vol-email" required placeholder="seu@email.com">
+                                <label for="vol-email" data-i18n="forms.email_label">Email</label>
+                                <input type="email" id="vol-email" required placeholder="seu@email.com"
+                                    data-i18n="forms.email_placeholder">
                             </div>
                             <div class="form-group">
-                                <label for="vol-phone">Telefone / WhatsApp</label>
+                                <label for="vol-phone" data-i18n="forms.phone_label">Telefone / WhatsApp</label>
                                 <input type="tel" id="vol-phone" required placeholder="+258 ...">
                             </div>
                             <div class="form-group">
-                                <label for="vol-area">Área de Interesse</label>
+                                <label for="vol-area" data-i18n="forms.area_label">Área de Interesse</label>
                                 <select id="vol-area">
-                                    <option value="education">Educação</option>
-                                    <option value="health">Saúde</option>
-                                    <option value="events">Organização de Eventos</option>
-                                    <option value="logistics">Logística</option>
-                                    <option value="other">Outro</option>
+                                    <option value="education" data-i18n="forms.area_education">Educação</option>
+                                    <option value="health" data-i18n="forms.area_health">Saúde</option>
+                                    <option value="events" data-i18n="forms.area_events">Organização de Eventos</option>
+                                    <option value="logistics" data-i18n="forms.area_logistics">Logística</option>
+                                    <option value="other" data-i18n="forms.area_other">Outro</option>
                                 </select>
                             </div>
-                            <button type="submit" class="btn btn-secondary submit-btn">Enviar Inscrição</button>
+                            <button type="submit" class="btn btn-secondary submit-btn"
+                                data-i18n="forms.submit_volunteer">Enviar Inscrição</button>
                         </form>
                     </div>
 
                     <!-- Contact Form -->
                     <div class="form-box" id="contact-form">
-                        <h3>Entre em Contacto</h3>
+                        <h3 data-i18n="forms.contact_title">Entre em Contacto</h3>
                         <form id="contactForm">
                             <div class="form-group">
-                                <label for="con-name">Nome</label>
-                                <input type="text" id="con-name" required placeholder="Seu nome">
+                                <label for="con-name" data-i18n="forms.name_label">Nome</label>
+                                <input type="text" id="con-name" required placeholder="Seu nome"
+                                    data-i18n="forms.name_placeholder">
                             </div>
                             <div class="form-group">
-                                <label for="con-email">Email</label>
-                                <input type="email" id="con-email" required placeholder="seu@email.com">
+                                <label for="con-email" data-i18n="forms.email_label">Email</label>
+                                <input type="email" id="con-email" required placeholder="seu@email.com"
+                                    data-i18n="forms.email_placeholder">
                             </div>
                             <div class="form-group">
-                                <label for="con-message">Mensagem</label>
-                                <textarea id="con-message" rows="4" required
-                                    placeholder="Como podemos ajudar?"></textarea>
+                                <label for="con-message" data-i18n="forms.message_label">Mensagem</label>
+                                <textarea id="con-message" rows="4" required placeholder="Como podemos ajudar?"
+                                    data-i18n="forms.message_placeholder"></textarea>
                             </div>
-                            <button type="submit" class="btn btn-secondary submit-btn">Enviar Mensagem</button>
+                            <button type="submit" class="btn btn-secondary submit-btn"
+                                data-i18n="forms.submit_message">Enviar Mensagem</button>
                         </form>
                     </div>
                 </div>
@@ -590,10 +781,12 @@
     <!-- Footer -->
     <footer>
         <div class="footer-logo">Grace Hope Initiative</div>
-        <p>Maputo, Moçambique</p>
-        <p style="margin-top: 0.5rem;">Reacendendo a esperança para Moçambique</p>
-        <p class="footer-quote">"Juntos, podemos reacender a esperança e transformar vidas."</p>
-        <p style="margin-top: 1.5rem; font-size: 0.8rem;">&copy; 2026 Grace Hope Initiative. Todos os direitos
+        <p data-i18n="footer.address">Maputo, Moçambique</p>
+        <p style="margin-top: 0.5rem;" data-i18n="footer.slogan">Reacendendo a esperança para Moçambique</p>
+        <p class="footer-quote" data-i18n="footer.quote">"Juntos, podemos reacender a esperança e transformar vidas."
+        </p>
+        <p style="margin-top: 1.5rem; font-size: 0.8rem;" data-i18n="footer.rights">&copy; 2026 Grace Hope Initiative.
+            Todos os direitos
             reservados.</p>
     </footer>
 
@@ -601,40 +794,44 @@
     <div id="donateModal" class="modal">
         <div class="modal-content">
             <span class="close-modal">&times;</span>
-            <h2>Faça a sua Doação</h2>
-            <p>Escolha o método de pagamento preferido para apoiar a nossa causa.</p>
+            <h2 data-i18n="modal.title">Faça a sua Doação</h2>
+            <p data-i18n="modal.subtitle">Escolha o método de pagamento preferido para apoiar a nossa causa.</p>
 
             <div class="payment-options">
+                <!-- M-Pesa -->
                 <div class="payment-option mpesa">
-                    <h4>M-Pesa / E-Mola</h4>
+                    <h4>M-Pesa</h4>
                     <p class="highlight">
-                        84 123 4567 / 82 123 4567
-                        <button class="copy-btn" onclick="copyToClipboard('841234567')" title="Copiar">
+                        85 695 6106
+                        <button class="copy-btn" onclick="copyToClipboard('856956106')" title="Copiar">
                             <i class="fas fa-copy"></i>
                         </button>
                     </p>
-                    <small>Nome: Grace Hope Initiative</small>
+                    <small data-i18n="modal.mpesa_name">Nome: Grace Hope Initiative</small>
                 </div>
-                <div class="payment-option bank">
-                    <h4>Transferência Bancária</h4>
-                    <p><strong>Banco:</strong> Millennium BIM</p>
-                    <p>
-                        <strong>NIB:</strong> <span id="nib">0001 2345 6789 0123 4567 8</span>
-                        <button class="copy-btn" onclick="copyToClipboard('000123456789012345678')" title="Copiar">
+
+                <!-- PayPal -->
+                <div class="payment-option bank"> <!-- Using bank class for styling consistency -->
+                    <h4>PayPal</h4>
+                    <p class="highlight" style="font-size: 1rem;">
+                        gracehopeinitiative@gmail.com
+                        <button class="copy-btn" onclick="copyToClipboard('gracehopeinitiative@gmail.com')"
+                            title="Copiar">
                             <i class="fas fa-copy"></i>
                         </button>
                     </p>
-                    <small>Titular: Grace Hope Initiative</small>
+                    <small data-i18n="modal.international">Doações Internacionais</small>
                 </div>
             </div>
-            <p style="margin-top: 1rem; font-size: 0.9rem; color: #666;">Por favor, envie o comprovativo para
-                <strong>financeiro@ghi.org.mz</strong>
+            <p style="margin-top: 1rem; font-size: 0.9rem; color: #666;"><span data-i18n="modal.proof">Por favor, envie
+                    o comprovativo para</span>
+                <strong>gracehopeinitiative@gmail.com</strong>
             </p>
         </div>
     </div>
 
     <!-- Back to Top Button -->
-    <button id="backToTop" class="back-to-top" title="Voltar ao topo">
+    <button id="backToTop" class="back-to-top" title="Voltar ao topo" data-i18n-title="footer.back_to_top">
         <i class="fas fa-arrow-up"></i>
     </button>
 

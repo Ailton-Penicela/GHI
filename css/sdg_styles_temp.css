@@ -1,0 +1,89 @@
+/* Append this to styles.css */
+/* SDGs Creative Section */
+.sdgs-section {
+    padding: 4rem 1.5rem;
+    background: #fdfdfd;
+}
+
+.sdgs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 1.5rem;
+    max-width: 1200px;
+    margin: 3rem auto 0;
+}
+
+.sdg-item {
+    aspect-ratio: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem;
+    border-radius: 4px;
+    /* SDGs usually have sharp or slightly rounded corners */
+    color: white;
+    font-weight: bold;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    position: relative;
+    overflow: hidden;
+}
+
+.sdg-item:hover {
+    transform: scale(1.1) rotate(2deg);
+    z-index: 10;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+.sdg-number {
+    font-size: 2rem;
+    opacity: 0.8;
+}
+
+.sdg-item h4 {
+    font-size: 0.9rem;
+    line-height: 1.2;
+    text-transform: uppercase;
+}
+
+/* SDG Colors (Approximate to UN) */
+.sdg-item:nth-child(1) {
+    background: #E5243B;
+}
+
+/* No Poverty */
+.sdg-item:nth-child(2) {
+    background: #DDA63A;
+}
+
+/* Zero Hunger */
+.sdg-item:nth-child(3) {
+    background: #4C9F38;
+}
+
+/* Good Health */
+.sdg-item:nth-child(4) {
+    background: #C5192D;
+}
+
+/* Education */
+.sdg-item:nth-child(5) {
+    background: #FF3A21;
+}
+
+/* Gender Equality */
+.sdg-item:nth-child(6) {
+    background: #26BDE2;
+}
+
+/* Clean Water */
+.sdg-item:nth-child(7) {
+    background: #A21942;
+}
+
+/* Economic Growth (actually SDG 8) */
+.sdg-item:nth-child(8) {
+    background: #DD1367;
+}
+
+/* Reduced Inequalities (SDG 10) */
