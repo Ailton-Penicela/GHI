@@ -151,7 +151,7 @@ function handleFormSubmit(formId) {
 }
 
 // Initialize Forms
-handleFormSubmit('volunteerForm');
+// Initialize Forms
 handleFormSubmit('contactForm');
 
 // ==========================================
@@ -331,6 +331,16 @@ const translations = {
             message_title: "Envie-nos uma Mensagem",
             message_subtitle: "Juntos, podemos reacender a esperança e transformar vidas"
         },
+        contact_new: {
+            tag: "Contactos",
+            title: "Entre em",
+            title_highlight: "Contacto",
+            subtitle: "Temos o prazer de ouvir de si. Preencha o formulário ou contacte-nos através dos canais abaixo.",
+            email_title: "Email",
+            phone_title: "Telefone",
+            location_title: "Localização",
+            location_value: "Maputo, Moçambique"
+        },
         sdgs: {
             title: "Objetivos de Desenvolvimento Sustentável",
             subtitle: "A Grace Hope Initiative está comprometida em contribuir para a realização dos seguintes ODS da ONU:",
@@ -344,6 +354,7 @@ const translations = {
             inequality: "Redução das Desigualdades"
         },
         forms: {
+            heading: "Envie-nos uma Mensagem",
             volunteer_action: "Seja Voluntário",
             volunteer_desc: "Junte-se à nossa equipa no terreno.",
             donate_action: "Faça uma Doação",
@@ -365,28 +376,27 @@ const translations = {
             area_logistics: "Logística",
             area_other: "Outro",
             submit_volunteer: "Enviar Inscrição",
-            submit_volunteer: "Enviar Inscrição",
             submit_message: "Enviar Mensagem",
             email_label: "Email",
+            email_placeholder: "seu@email.com",
             phone_label: "Telefone / WhatsApp",
-            email_placeholder: "seu@email.com"
+            subject_label: "Assunto",
+            subject_placeholder: "Selecione um assunto",
+            opt_donation: "Quero fazer uma doação",
+            opt_volunteer: "Quero ser voluntário",
+            opt_partnership: "Parcerias",
+            opt_general: "Informação geral"
         },
         footer: {
-            subscribe: "Subscreva a Nossa Newsletter",
-            subscribe_desc: "Fique a par das nossas últimas notícias e atualizações.",
-            subscribe_btn: "Subscrever",
-            email_placeholder: "O seu email",
-            quick_links: "Links Rápidos",
-            contact_us: "Contacte-nos",
-            email_label: "Email:",
-            phone_label: "Telefone:",
-            address: "Maputo, Moçambique",
-            slogan: "Reacendendo a esperança para Moçambique",
-            quote: "\"Juntos, podemos reacender a esperança e transformar vidas.\"",
-            slogan: "Reacendendo a esperança para Moçambique",
-            quote: "\"Juntos, podemos reacender a esperança e transformar vidas.\"",
+            slogan: "Reacendendo a esperança dos mais necessitados em Moçambique e em toda a África.",
+            links_title: "Links Rápidos",
+            areas_title: "Áreas de Foco",
+            newsletter_title: "Newsletter",
+            newsletter_desc: "Receba atualizações sobre o nosso trabalho.",
+            email_placeholder: "Seu email",
+            btn_subscribe: "Inscrever",
             rights: "&copy; 2026 Grace Hope Initiative. Todos os direitos reservados.",
-            back_to_top: "Voltar ao topo"
+            location: "Moçambique • África"
         },
         modal: {
             title: "Faça a sua Doação",
@@ -542,6 +552,16 @@ const translations = {
             message_title: "Send Us a Message",
             message_subtitle: "Together, we can rekindle hope and transform lives"
         },
+        contact_new: {
+            tag: "Contacts",
+            title: "Get in",
+            title_highlight: "Touch",
+            subtitle: "We would love to hear from you. Fill out the form or contact us via the channels below.",
+            email_title: "Email",
+            phone_title: "Phone",
+            location_title: "Location",
+            location_value: "Maputo, Mozambique"
+        },
         sdgs: {
             title: "Sustainable Development Goals",
             subtitle: "Grace Hope Initiative is committed to contributing to the following UN SDGs:",
@@ -555,6 +575,7 @@ const translations = {
             inequality: "Reduced Inequalities"
         },
         forms: {
+            heading: "Send Us a Message",
             volunteer_action: "Be a Volunteer",
             volunteer_desc: "Join our team on the ground.",
             donate_action: "Make a Donation",
@@ -576,27 +597,27 @@ const translations = {
             area_logistics: "Logistics",
             area_other: "Other",
             submit_volunteer: "Submit Application",
-            submit_volunteer: "Submit Application",
             submit_message: "Send Message",
             email_label: "Email",
+            email_placeholder: "your@email.com",
             phone_label: "Phone / WhatsApp",
-            email_placeholder: "your@email.com"
+            subject_label: "Subject",
+            subject_placeholder: "Select a subject",
+            opt_donation: "I want to make a donation",
+            opt_volunteer: "I want to be a volunteer",
+            opt_partnership: "Partnerships",
+            opt_general: "General information"
         },
         footer: {
-            subscribe: "Subscribe to Our Newsletter",
-            subscribe_desc: "Stay up to date with our latest news and updates.",
-            subscribe_btn: "Subscribe",
+            slogan: "Rekindling hope for those in need in Mozambique and across Africa.",
+            links_title: "Quick Links",
+            areas_title: "Focus Areas",
+            newsletter_title: "Newsletter",
+            newsletter_desc: "Receive updates about our work.",
             email_placeholder: "Your email",
-            quick_links: "Quick Links",
-            contact_us: "Contact Us",
-            email_label: "Email:",
-            phone_label: "Phone:",
-            address: "Maputo, Mozambique",
-            slogan: "Rekindling hope for Mozambique",
-            quote: "\"Together, we can rekindle hope and transform lives.\"",
-            quote: "\"Together, we can rekindle hope and transform lives.\"",
+            btn_subscribe: "Subscribe",
             rights: "&copy; 2026 Grace Hope Initiative. All rights reserved.",
-            back_to_top: "Back to Top"
+            location: "Mozambique • Africa"
         },
         modal: {
             title: "Make a Donation",

@@ -285,7 +285,8 @@
                     </div>
                 </div>
                 <div class="gallery-item">
-                    <img src="assets/images/story_water_local.png" alt="Projetos WASH" loading="lazy">
+                    <img src="https://www.unicef.org/wca/sites/unicef.org.wca/files/styles/hero_extended/public/wca-programme-wash-UN055942.jpg.webp?itok=wA5DHVNP"
+                        alt="Projetos WASH" loading="lazy">
                     <div class="gallery-overlay">
                         <div class="gallery-text" data-i18n="services.wash">WASH</div>
                     </div>
@@ -428,7 +429,7 @@
 
                     <!-- Story 4: Community (WASH/Health) - Reusing previous image or general -->
                     <div class="story-card">
-                        <img src="assets/images/story_water_final.png" alt="Success Story - WASH" class="story-image"
+                        <img src="assets/images/story_water_local.png" alt="Success Story - WASH" class="story-image"
                             loading="lazy">
                         <div class="story-content">
                             <h3 data-i18n="stories.story4.title">Água Limpa, Vida Nova</h3>
@@ -510,7 +511,7 @@
 
                     <!-- Clone 4 -->
                     <div class="story-card" aria-hidden="true">
-                        <img src="assets/images/story_water_final.png" alt="Success Story - WASH" class="story-image"
+                        <img src="assets/images/story_water_local.png" alt="Success Story - WASH" class="story-image"
                             loading="lazy">
                         <div class="story-content">
                             <h3 data-i18n="stories.story4.title">Água Limpa, Vida Nova</h3>
@@ -545,7 +546,46 @@
         </div>
     </section>
 
-
+    <section class="sdgs-section">
+        <h2 class="section-title" data-i18n="sdgs.title">Objetivos de Desenvolvimento Sustentável</h2>
+        <p style="text-align: center; max-width: 800px; margin: 0 auto; color: #666; font-size: 0.95rem;"
+            data-i18n="sdgs.subtitle">A Grace Hope
+            Initiative está comprometida em contribuir para a realização dos seguintes ODS da ONU:</p>
+        <div class="sdgs-grid">
+            <div class="sdg-item">
+                <div class="sdg-number">1</div>
+                <h4 data-i18n="sdgs.poverty">Erradicação da Pobreza</h4>
+            </div>
+            <div class="sdg-item">
+                <div class="sdg-number">2</div>
+                <h4 data-i18n="sdgs.hunger">Fome Zero</h4>
+            </div>
+            <div class="sdg-item">
+                <div class="sdg-number">3</div>
+                <h4 data-i18n="sdgs.health">Boa Saúde</h4>
+            </div>
+            <div class="sdg-item">
+                <div class="sdg-number">4</div>
+                <h4 data-i18n="sdgs.education">Educação de Qualidade</h4>
+            </div>
+            <div class="sdg-item">
+                <div class="sdg-number">5</div>
+                <h4 data-i18n="sdgs.gender">Igualdade de Gênero</h4>
+            </div>
+            <div class="sdg-item">
+                <div class="sdg-number">6</div>
+                <h4 data-i18n="sdgs.water">Água e Saneamento</h4>
+            </div>
+            <div class="sdg-item">
+                <div class="sdg-number">8</div>
+                <h4 data-i18n="sdgs.economic">Crescimento Económico</h4>
+            </div>
+            <div class="sdg-item">
+                <div class="sdg-number">10</div>
+                <h4 data-i18n="sdgs.inequality">Redução das Desigualdades</h4>
+            </div>
+        </div>
+    </section>
 
     <!-- Projects Section -->
     <section id="projects" class="container">
@@ -618,160 +658,136 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <div class="contact-content">
-                <div class="contact-info">
-                    <span class="section-tag" data-i18n="contact_new.tag">Contactos</span>
-                    <h2><span data-i18n="contact_new.title">Entre em</span> <span class="highlight"
-                            data-i18n="contact_new.title_highlight">Contacto</span></h2>
-                    <p data-i18n="contact_new.subtitle">Temos o prazer de ouvir de si. Preencha o formulário ou
-                        contacte-nos através dos canais abaixo.
-                    </p>
+    <!-- Help & Forms Section -->
+    <section id="help" class="help-section">
+        <div class="help-content">
+            <h2 class="section-title" style="color: white; margin-bottom: 3rem;" data-i18n="help.title">Contactos e
+                Ajuda</h2>
 
-                    <div class="contact-details">
-                        <div class="contact-item">
-                            <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M20 4H4C2.9 4, 2 4.9, 2 6V18C2 19.1, 2.9 20, 4 20H20C21.1 20, 22 19.1, 22 18V6C22 4.9, 21.1 4, 20 4ZM20 8L12 13L4 8V6L12 11L20 6V8Z"
-                                    fill="#f5a623" />
-                            </svg>
-                            <div>
-                                <h4 data-i18n="contact_new.email_title">Email</h4>
-                                <p>gracehopeinitiative@gmail.com</p>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M6.62 10.79C8.06 13.62 10.38 15.94 13.21 17.38L15.41 15.18C15.69 14.9 16.08 14.82 16.43 14.93C17.55 15.3 18.75 15.5 20 15.5C20.55 15.5 21 15.95 21 16.5V20C21 20.55 20.55 21 20 21C10.61 21 3 13.39 3 4C3 3.45 3.45 3 4 3H7.5C8.05 3 8.5 3.45 8.5 4C8.5 5.25 8.7 6.45 9.07 7.57C9.18 7.92 9.1 8.31 8.82 8.59L6.62 10.79Z"
-                                    fill="#f5a623" />
-                            </svg>
-                            <div>
-                                <h4 data-i18n="contact_new.phone_title">Telefone</h4>
-                                <p>+258 84 391 1691</p>
-                            </div>
-                        </div>
-                        <div class="contact-item">
-                            <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M12 2C8.13 2 5 5.13 5 9C5 14.25 12 22 12 22S19 14.25 19 9C19 5.13 15.87 2 12 2ZM12 11.5C10.62 11.5 9.5 10.38 9.5 9C9.5 7.62 10.62 6.5 12 6.5C13.38 6.5 14.5 7.62 14.5 9C14.5 10.38 13.38 11.5 12 11.5Z"
-                                    fill="#f5a623" />
-                            </svg>
-                            <div>
-                                <h4 data-i18n="contact_new.location_title">Localização</h4>
-                                <p data-i18n="contact_new.location_value">Maputo, Moçambique</p>
-                            </div>
-                        </div>
+            <!-- Contact Information Minimal Bar (Discreet) -->
+            <div class="contact-minimal-bar">
+                <div class="contact-item">
+                    <i class="fas fa-phone-alt contact-icon"></i>
+                    <div class="contact-text">
+                        <span class="contact-label" data-i18n="help.phone">Telefone / WhatsApp</span>
+                        <span class="contact-value">+258 84 391 1691</span>
                     </div>
+                </div>
+                <div class="divider-vertical"></div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope contact-icon"></i>
+                    <div class="contact-text">
+                        <span class="contact-label" data-i18n="help.email">Email Geral</span>
+                        <span class="contact-value">gracehopeinitiative@gmail.com</span>
+                    </div>
+                </div>
+                <div class="divider-vertical"></div>
+                <div class="contact-item">
+                    <i class="fas fa-hand-holding-heart contact-icon"></i>
+                    <div class="contact-text">
+                        <span class="contact-label" data-i18n="help.donation_contact">Contacto para Doações</span>
+                        <span class="contact-value">+258 85 695 6106</span>
+                    </div>
+                </div>
+            </div>
 
-                    <div class="social-links">
-                        <a href="#" class="social-link" aria-label="Facebook">
-                            <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M18 2H6C4.9 2 4 2.9 4 4V20C4 21.1 4.9 22 6 22H18C19.1 22 20 21.1 20 20V4C20 2.9 19.1 2 18 2ZM18 20H6V10H12V7H10V5H12V4C12 3.45 12.45 3 13 3H15V5H13C12.45 5 12 5.45 12 6V7H15V10H18V20Z"
-                                    fill="#f5a623" />
-                            </svg>
-                        </a>
-                        <a href="#" class="social-link" aria-label="Instagram">
-                            <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M7.8 2H16.2C19.4 2 22 4.6 22 7.8V16.2C22 19.4 19.4 22 16.2 22H7.8C4.6 22 2 19.4 2 16.2V7.8C2 4.6 4.6 2 7.8 2ZM7.8 4C5.7 4 4 5.7 4 7.8V16.2C4 18.3 5.7 20 7.8 20H16.2C18.3 20 20 18.3 20 16.2V7.8C20 5.7 18.3 4 16.2 4H7.8ZM17 5.5C17.3 5.5 17.5 5.7 17.5 6C17.5 6.3 17.3 6.5 17 6.5C16.7 6.5 16.5 6.3 16.5 6C16.5 5.7 16.7 5.5 17 5.5ZM12 7C14.2 7 16 8.8 16 11C16 13.2 14.2 15 12 15C9.8 15 8 13.2 8 11C8 8.8 9.8 7 12 7ZM12 9C10.9 9 10 9.9 10 11C10 12.1 10.9 13 12 13C13.1 13 14 12.1 14 11C14 9.9 13.1 9 12 9Z"
-                                    fill="#f5a623" />
-                            </svg>
-                        </a>
-                        <a href="#" class="social-link" aria-label="LinkedIn">
-                            <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M19 3H5C3.9 3 3 3.9 3 5V19C3 20.1 3.9 21 5 21H19C20.1 21 21 20.1 21 19V5C21 3.9 20.1 3 19 3ZM19 19H5V5H19V19ZM7 7H9V9H7V7ZM7 11H9V17H7V11ZM15 11H17V13H15V11ZM15 15H17V17H15V15Z"
-                                    fill="#f5a623" />
-                            </svg>
-                        </a>
+            <h2 style="margin-top: 2rem;" data-i18n="help.message_title">Envie-nos uma Mensagem</h2>
+            <p data-i18n="help.message_subtitle">Juntos, podemos reacender a esperança e transformar vidas</p>
+
+            <div class="forms-container">
+                <!-- Volunteer/Contact Toggle Actions (Simplified for improved UX) -->
+                <div class="action-cards-grid">
+                    <div class="action-card"
+                        onclick="document.getElementById('volunteer-form').scrollIntoView({behavior: 'smooth'})">
+                        <div class="action-icon">🙋</div>
+                        <h3 data-i18n="forms.volunteer_action">Seja Voluntário</h3>
+                        <p data-i18n="forms.volunteer_desc">Junte-se à nossa equipa no terreno.</p>
+                    </div>
+                    <div class="action-card" onclick="openDonateModal()">
+                        <div class="action-icon">💰</div>
+                        <h3 data-i18n="forms.donate_action">Faça uma Doação</h3>
+                        <p data-i18n="forms.donate_desc">Apoie financeiramente os nossos projetos.</p>
+                    </div>
+                    <div class="action-card"
+                        onclick="document.getElementById('contact-form').scrollIntoView({behavior: 'smooth'})">
+                        <div class="action-icon">📩</div>
+                        <h3 data-i18n="forms.contact_action">Fale Connosco</h3>
+                        <p data-i18n="forms.contact_desc">Dúvidas ou parcerias? Envie uma mensagem.</p>
                     </div>
                 </div>
 
-                <div class="contact-form-wrapper">
-                    <form class="contact-form" id="contactForm">
-                        <h3 data-i18n="forms.heading">Envie-nos uma Mensagem</h3>
-                        <div class="form-group">
-                            <label for="name" data-i18n="forms.name_label">Nome Completo</label>
-                            <input type="text" id="name" name="name" placeholder="Seu nome" required
-                                data-i18n="forms.name_placeholder">
-                        </div>
-                        <div class="form-group">
-                            <label for="email" data-i18n="forms.email_label">Email</label>
-                            <input type="email" id="email" name="email" placeholder="seu@email.com" required
-                                data-i18n="forms.email_placeholder">
-                        </div>
-                        <div class="form-group">
-                            <label for="subject" data-i18n="forms.subject_label">Assunto</label>
-                            <select id="subject" name="subject" required data-i18n="forms.subject_placeholder">
-                                <option value="" data-i18n="forms.subject_placeholder">Selecione um assunto</option>
-                                <option value="donation" data-i18n="forms.opt_donation">Quero fazer uma doação</option>
-                                <option value="volunteer" data-i18n="forms.opt_volunteer">Quero ser voluntário</option>
-                                <option value="partnership" data-i18n="forms.opt_partnership">Parcerias</option>
-                                <option value="general" data-i18n="forms.opt_general">Informação geral</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="message" data-i18n="forms.message_label">Mensagem</label>
-                            <textarea id="message" name="message" rows="5" placeholder="Como podemos ajudar?" required
-                                data-i18n="forms.message_placeholder"></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary btn-full" data-i18n="forms.btn_submit">Enviar
-                            Mensagem</button>
-                    </form>
+                <div class="forms-grid">
+                    <!-- Volunteer Form -->
+                    <div class="form-box" id="volunteer-form">
+                        <h3 data-i18n="forms.volunteer_title">Ficha de Inscrição de Voluntário</h3>
+                        <form id="volunteerForm">
+                            <div class="form-group">
+                                <label for="vol-name" data-i18n="forms.name_label">Nome Completo</label>
+                                <input type="text" id="vol-name" required placeholder="Seu nome"
+                                    data-i18n="forms.name_placeholder">
+                            </div>
+                            <div class="form-group">
+                                <label for="vol-email" data-i18n="forms.email_label">Email</label>
+                                <input type="email" id="vol-email" required placeholder="seu@email.com"
+                                    data-i18n="forms.email_placeholder">
+                            </div>
+                            <div class="form-group">
+                                <label for="vol-phone" data-i18n="forms.phone_label">Telefone / WhatsApp</label>
+                                <input type="tel" id="vol-phone" required placeholder="+258 ...">
+                            </div>
+                            <div class="form-group">
+                                <label for="vol-area" data-i18n="forms.area_label">Área de Interesse</label>
+                                <select id="vol-area">
+                                    <option value="education" data-i18n="forms.area_education">Educação</option>
+                                    <option value="health" data-i18n="forms.area_health">Saúde</option>
+                                    <option value="events" data-i18n="forms.area_events">Organização de Eventos</option>
+                                    <option value="logistics" data-i18n="forms.area_logistics">Logística</option>
+                                    <option value="other" data-i18n="forms.area_other">Outro</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="btn btn-secondary submit-btn"
+                                data-i18n="forms.submit_volunteer">Enviar Inscrição</button>
+                        </form>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <div class="form-box" id="contact-form">
+                        <h3 data-i18n="forms.contact_title">Entre em Contacto</h3>
+                        <form id="contactForm">
+                            <div class="form-group">
+                                <label for="con-name" data-i18n="forms.name_label">Nome</label>
+                                <input type="text" id="con-name" required placeholder="Seu nome"
+                                    data-i18n="forms.name_placeholder">
+                            </div>
+                            <div class="form-group">
+                                <label for="con-email" data-i18n="forms.email_label">Email</label>
+                                <input type="email" id="con-email" required placeholder="seu@email.com"
+                                    data-i18n="forms.email_placeholder">
+                            </div>
+                            <div class="form-group">
+                                <label for="con-message" data-i18n="forms.message_label">Mensagem</label>
+                                <textarea id="con-message" rows="4" required placeholder="Como podemos ajudar?"
+                                    data-i18n="forms.message_placeholder"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-secondary submit-btn"
+                                data-i18n="forms.submit_message">Enviar Mensagem</button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-brand">
-                    <a href="#" class="logo">
-                        <img src="assets/images/logo_nobg.png" alt="Grace Hope Initiative Logo" style="height: 50px;">
-                        <span>Grace Hope Initiative</span>
-                    </a>
-                    <p data-i18n="footer.slogan">Reacendendo a esperança dos mais necessitados em Moçambique e em toda a
-                        África.</p>
-                </div>
-                <div class="footer-links">
-                    <h4 data-i18n="footer.links_title">Links Rápidos</h4>
-                    <ul>
-                        <li><a href="#home" data-i18n="nav.home">Início</a></li>
-                        <li><a href="#about" data-i18n="nav.about">Sobre Nós</a></li>
-                        <li><a href="#what-we-do" data-i18n="nav.service">O Que Fazemos</a></li>
-                        <li><a href="#projects" data-i18n="projects.title">Projetos</a></li>
-                    </ul>
-                </div>
-                <div class="footer-links">
-                    <h4 data-i18n="footer.areas_title">Áreas de Foco</h4>
-                    <ul>
-                        <li><a href="#" data-i18n="services.education">Educação</a></li>
-                        <li><a href="#" data-i18n="services.empowerment">Empoderamento</a></li>
-                        <li><a href="#" data-i18n="services.food_security">Segurança Alimentar</a></li>
-                        <li><a href="#" data-i18n="services.healthcare">Saúde</a></li>
-                    </ul>
-                </div>
-                <div class="footer-newsletter">
-                    <h4 data-i18n="footer.newsletter_title">Newsletter</h4>
-                    <p data-i18n="footer.newsletter_desc">Receba atualizações sobre o nosso trabalho.</p>
-                    <form class="newsletter-form">
-                        <input type="email" placeholder="Seu email" data-i18n="footer.email_placeholder">
-                        <button type="submit" class="btn btn-primary"
-                            data-i18n="footer.btn_subscribe">Inscrever</button>
-                    </form>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p data-i18n="footer.rights">&copy; 2026 Grace Hope Initiative. Todos os direitos reservados.</p>
-                <p data-i18n="footer.location">Moçambique • África</p>
-            </div>
-        </div>
+    <footer>
+        <div class="footer-logo">Grace Hope Initiative</div>
+        <p data-i18n="footer.address">Maputo, Moçambique</p>
+        <p style="margin-top: 0.5rem;" data-i18n="footer.slogan">Reacendendo a esperança para Moçambique</p>
+        <p class="footer-quote" data-i18n="footer.quote">"Juntos, podemos reacender a esperança e transformar vidas."
+        </p>
+        <p style="margin-top: 1.5rem; font-size: 0.8rem;" data-i18n="footer.rights">&copy; 2026 Grace Hope Initiative.
+            Todos os direitos
+            reservados.</p>
     </footer>
 
     <!-- Donation Modal -->
