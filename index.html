@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Grace Hope Initiative - Reavivando a Esperança para Moçambique. Capacitando comunidades através de ajuda humanitária, educação e desenvolvimento sustentável.">
+    <meta name="keywords"
+        content="ONG, Moçambique, Ajuda Humanitária, Educação, Voluntariado, Doação, Grace Hope Initiative">
+    <meta property="og:title" content="Grace Hope Initiative - Reavivando a Esperança em Moçambique">
+    <meta property="og:description"
+        content="Juntos podemos transformar vidas em Moçambique. Junte-se à nossa missão de esperança e desenvolvimento.">
+    <meta property="og:image" content="assets/images/logo.png">
+    <meta property="og:type" content="website">
+    <title>Grace Hope Initiative - Reavivando a Esperança para Moçambique</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/png" href="assets/images/logo.png">
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "NGO",
+      "name": "Grace Hope Initiative",
+      "url": "https://gracehopeinitiative.org",
+      "logo": "assets/images/logo.png",
+      "sameAs": [
+        "https://facebook.com/gracehopeinitiative",
+        "https://instagram.com/gracehopeinitiative"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+258-84-123-4567",
+        "contactType": "customer service",
+        "areaServed": "MZ",
+        "availableLanguage": ["Portuguese", "English"]
+      }
+    }
+    </script>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="assets/images/logo.png" alt="Grace Hope Initiative Logo">
+                <div class="logo-text">
+                    <strong>Grace Hope</strong>
+                    <small>Initiative</small>
+                </div>
+            </div>
+            <button class="menu-toggle" id="menuToggle">☰</button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Início</a></li>
+                <li><a href="#about">Sobre Nós</a></li>
+                <li><a href="#values">Valores</a></li>
+                <li><a href="#services">O Que Fazemos</a></li>
+                <li><a href="#gallery">Galeria</a></li>
+                <li><a href="#testimonials">Testemunhos</a></li>
+                <li><a href="#stories">Histórias</a></li>
+                <li><a href="#help">Ajude-nos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content" data-aos="fade-up" data-aos-duration="1200">
+            <h1>Reavivando a Esperança para Moçambique</h1>
+            <p>Capacitando comunidades marginalizadas em Moçambique através de assistência humanitária,
+                advocacia e desenvolvimento sustentável.</p>
+            <div class="cta-buttons">
+                <button onclick="openDonateModal()" class="btn btn-primary">Doar Agora</button>
+                <a href="#about" class="btn btn-secondary">Saiba Mais</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="container">
+        <div class="section">
+            <h2 class="section-title" data-aos="fade-right">Sobre Nós</h2>
+            <p class="section-subtitle">
+                A Grace Hope Initiative (GHI) é uma organização sem fins lucrativos sediada em África, criada para
+                reacender a esperança nas comunidades carenciadas e empobrecidas.
+            </p>
+
+            <div class="about-text">
+                <h3>Quem Somos</h3>
+                <p>Trabalhamos para criar e proporcionar oportunidades onde jovens africanos marginalizados e mulheres
+                    vulneráveis possam ousar <strong>ACREDITAR NA ESPERANÇA</strong> e tornar os seus <strong>SONHOS
+                        REALIDADE</strong>.</p>
+                <p>Através de parcerias com organizações internacionais, comunidades locais, instituições governamentais
+                    e filantropos, buscamos garantir que ninguém fique para trás na construção de um futuro mais justo e
+                    próspero.</p>
+            </div>
+
+            <div class="vision-mission-grid" style="margin-top: 2rem;">
+                <div class="vm-card">
+                    <h3>Nossa Visão</h3>
+                    <p>Trazer ESPERANÇA às pessoas mais marginalizadas, particularmente crianças, jovens raparigas e
+                        mulheres em Moçambique, proporcionando assistência significativa e apoio para
+                        criar impacto sustentável nas suas comunidades.</p>
+                </div>
+                <div class="vm-card">
+                    <h3>Nossa Missão</h3>
+                    <p>Capacitar e valorizar todas as crianças, jovens, mulheres e comunidades carenciadas em Moçambique
+                        que são vítimas de pobreza, desigualdade, discriminação e abuso, garantindo o
+                        seu acesso a uma vida digna, direitos humanos básicos e oportunidades para prosperar.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Values Section -->
+    <section id="values" class="container">
+        <div class="section">
+            <h2 class="section-title" data-aos="fade-right">Nossos Valores</h2>
+            <p class="section-subtitle" data-aos="fade-left">Estes são os pilares que guiam todas as nossas ações e
+                decisões</p>
+            <div class="values-grid">
+                <div class="value-card">
+                    <div class="value-icon">💡</div>
+                    <h3>Inspiração</h3>
+                    <p>Inspiramos confiança nos marginalizados e esperança nos menos privilegiados para acreditar num
+                        futuro brilhante.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">🤝</div>
+                    <h3>Compromisso</h3>
+                    <p>Colocamos a nossa missão no centro dos projetos e atividades da nossa organização.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">💎</div>
+                    <h3>Lealdade</h3>
+                    <p>A qualidade é o motor do nosso desempenho. Buscamos a excelência em tudo o que fazemos.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">⭐</div>
+                    <h3>Excelência</h3>
+                    <p>Mantemos os mais altos padrões ao servir comunidades vulneráveis.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="container">
+        <div class="section">
+            <h2 class="section-title" data-aos="fade-down">O Que Fazemos</h2>
+            <p class="section-subtitle" data-aos="fade-up">Trabalhamos em parceria com comunidades, governos e
+                organizações para criar
+                impacto real e duradouro</p>
+
+            <div class="services-grid" data-aos="fade-up">
+                <div class="service-card">
+                    <div class="service-icon">🤝</div>
+                    <h3>Ajuda Humanitária e Socorro</h3>
+                    <p>Prestamos auxílio a pessoas afetadas por desastres naturais, fome, deslocação forçada e outras
+                        crises.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">📢</div>
+                    <h3>Advocacia pelos Sem Voz</h3>
+                    <p>Aumentamos a consciencialização, educamos e informamos o público sobre questões sociais
+                        pertinentes.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🌱</div>
+                    <h3>Desenvolvimento Sustentável</h3>
+                    <p>Investigamos, desenvolvemos e implementamos projetos que abordam os ODS das Nações Unidas.</p>
+                </div>
+            </div>
+
+            <!-- Áreas de Atuação -->
+            <h3
+                style="text-align: center; color: #2c5f2d; margin-top: 3rem; margin-bottom: 1.5rem; font-size: clamp(1.3rem, 3vw, 1.8rem);">
+                Nossas Áreas de Atuação</h3>
+            <p style="text-align: center; color: #666; margin-bottom: 2rem; font-size: 0.95rem;">Trabalhamos em seis
+                áreas essenciais para o progresso e desenvolvimento das comunidades</p>
+
+            <div class="areas-grid">
+                <div class="area-card">
+                    <div class="area-icon">📚</div>
+                    <h4>Educação</h4>
+                </div>
+                <div class="area-card">
+                    <div class="area-icon">💪</div>
+                    <h4>Empoderamento</h4>
+                </div>
+                <div class="area-card">
+                    <div class="area-icon">🍞</div>
+                    <h4>Segurança Alimentar</h4>
+                </div>
+                <div class="area-card">
+                    <div class="area-icon">🏥</div>
+                    <h4>Saúde</h4>
+                </div>
+                <div class="area-card">
+                    <div class="area-icon">⚖️</div>
+                    <h4>Igualdade de Gênero</h4>
+                </div>
+                <div class="area-card">
+                    <div class="area-icon">💧</div>
+                    <h4>WASH</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery-section">
+        <div style="max-width: 1400px; margin: 0 auto;">
+            <h2 class="section-title" data-aos="zoom-in">Nossas Atividades em Ação</h2>
+            <p class="section-subtitle" data-aos="zoom-in" data-aos-delay="200">Veja o impacto real que estamos a criar
+                nas comunidades</p>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="assets/images/humanitarian.jpg" alt="Ajuda Humanitária - Distribuição de Alimentos"
+                        loading="lazy">
+                    <div class="gallery-overlay">
+                        <div class="gallery-text">Ajuda Humanitária</div>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/images/volunteer.jpg" alt="Voluntariado Comunitário" loading="lazy">
+                    <div class="gallery-overlay">
+                        <div class="gallery-text">Voluntariado</div>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/images/education.png" alt="Programas de Educação" loading="lazy">
+                    <div class="gallery-overlay">
+                        <div class="gallery-text">Educação</div>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/images/empowerment.jpg" alt="Empoderamento de Mulheres" loading="lazy">
+                    <div class="gallery-overlay">
+                        <div class="gallery-text">Empoderamento</div>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/images/health.jpg" alt="Serviços de Saúde" loading="lazy">
+                    <div class="gallery-overlay">
+                        <div class="gallery-text">Saúde</div>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://www.unicef.org/wca/sites/unicef.org.wca/files/styles/hero_extended/public/wca-programme-wash-UN055942.jpg.webp?itok=wA5DHVNP"
+                        alt="Projetos WASH" loading="lazy">
+                    <div class="gallery-overlay">
+                        <div class="gallery-text">WASH</div>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/images/disaster.jpg" alt="Resposta a Desastres" loading="lazy">
+                    <div class="gallery-overlay">
+                        <div class="gallery-text">Emergências</div>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/images/children.jpg" alt="Apoio a Crianças Vulneráveis" loading="lazy">
+                    <div class="gallery-overlay">
+                        <div class="gallery-text">Crianças</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials-section">
+        <div style="max-width: 1400px; margin: 0 auto;">
+            <h2 class="section-title" style="color: white;">Testemunhos de Impacto</h2>
+            <p class="section-subtitle" style="color: rgba(255,255,255,0.8);">Ouça as histórias de quem foi transformado
+                pela Grace Hope Initiative</p>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="testimonial-text">"A Grace Hope Initiative mudou a vida da minha família. Quando perdemos
+                        tudo na enchente, eles estavam lá para nos ajudar. Hoje, meus filhos estão na escola graças ao
+                        apoio deles."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">MJ</div>
+                        <div class="author-info">
+                            <h4>Maria João</h4>
+                            <p>Mãe de 3 filhos, Maputo</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="testimonial-text">"Participei no programa de empoderamento de mulheres e aprendi
+                        competências que me permitiram iniciar o meu próprio negócio. Agora sou independente e posso
+                        sustentar a minha família."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">AC</div>
+                        <div class="author-info">
+                            <h4>Amelia Chaves</h4>
+                            <p>Empreendedora, Inhambane</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="testimonial-text">"Como voluntário, vi de perto o trabalho extraordinário que a GHI faz. A
+                        dedicação da equipa é inspiradora. Estou orgulhoso de fazer parte desta missão."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">RP</div>
+                        <div class="author-info">
+                            <h4>Ricardo Pereira</h4>
+                            <p>Voluntário, Sofala</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Success Stories Section -->
+    <section id="stories" class="stories-section">
+        <div style="max-width: 1400px; margin: 0 auto;">
+            <h2 class="section-title">Histórias de Sucesso</h2>
+            <p class="section-subtitle">Conheça as transformações reais que a Grace Hope Initiative tornou possível</p>
+            <div class="stories-grid">
+                <!-- História 1: Educação (Criança africana em escola) -->
+                <div class="story-card" data-aos="fade-up">
+                    <img src="https://images.unsplash.com/photo-1577896851231-70ef18881754?q=80&w=1000&auto=format&fit=crop"
+                        alt="Estudantes africanos na escola" class="story-image" loading="lazy">
+                    <div class="story-content">
+                        <div class="story-info-wrapper">
+                            <h3>De Criança de Rua a Estudante</h3>
+                            <p>Quando conhecemos o João, ele vivia nas ruas de Maputo. Através do nosso programa,
+                                conseguimos resgatá-lo.</p>
+                            <div class="story-highlight">
+                                <strong>Hoje:</strong> João está no 5º ano com excelentes notas.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- História 2: Empoderamento (Mercado local) -->
+                <div class="story-card" data-aos="fade-up" data-aos-delay="100">
+                    <img src="https://images.unsplash.com/photo-1628155930542-3c7a64e2c833?q=80&w=1000&auto=format&fit=crop"
+                        alt="Mulher no mercado moçambicano" class="story-image" loading="lazy">
+                    <div class="story-content">
+                        <div class="story-info-wrapper">
+                            <h3>Independência Financeira</h3>
+                            <p>Fátima, mãe solteira, aprendeu gestão de negócios e culinária através dos nossos
+                                workshops.</p>
+                            <div class="story-highlight">
+                                <strong>Hoje:</strong> Dona de um restaurante que emprega 5 pessoas.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- História 3: Água (Comunidade rural, poço) -->
+                <div class="story-card" data-aos="fade-up" data-aos-delay="200">
+                    <img src="https://images.unsplash.com/photo-1541913295-23aa4fd909cf?q=80&w=1000&auto=format&fit=crop"
+                        alt="Água na comunidade rural" class="story-image" loading="lazy">
+                    <div class="story-content">
+                        <div class="story-info-wrapper">
+                            <h3>Água para Chokwe</h3>
+                            <p>A aldeia não tinha acesso a água potável. Construímos poços comunitários.</p>
+                            <div class="story-highlight">
+                                <strong>Hoje:</strong> Doenças hídricas reduziram 80%.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- História 4: Saúde (Criança e mãe africana) -->
+                <div class="story-card" data-aos="fade-up" data-aos-delay="300">
+                    <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?q=80&w=1000&auto=format&fit=crop"
+                        alt="Cuidados de saúde infantil" class="story-image" loading="lazy">
+                    <div class="story-content">
+                        <div class="story-info-wrapper">
+                            <h3>Saúde em Xai-Xai</h3>
+                            <p>Estabelecemos clínicas móveis para atender a população local com medicamentos e vacinas.
+                            </p>
+                            <div class="story-highlight">
+                                <strong>Hoje:</strong> +2.000 pessoas atendidas e vacinadas.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SDGs Section -->
+    <section class="sdgs-section">
+        <h2 class="section-title">Objetivos de Desenvolvimento Sustentável</h2>
+        <p style="text-align: center; max-width: 800px; margin: 0 auto; color: #666; font-size: 0.95rem;">A Grace Hope
+            Initiative está comprometida em contribuir para a realização dos seguintes ODS da ONU:</p>
+        <div class="sdgs-grid">
+            <div class="sdg-item">
+                <div class="sdg-number">1</div>
+                <h4>Erradicação da Pobreza</h4>
+            </div>
+            <div class="sdg-item">
+                <div class="sdg-number">2</div>
+                <h4>Fome Zero</h4>
+            </div>
+            <div class="sdg-item">
+                <div class="sdg-number">3</div>
+                <h4>Boa Saúde</h4>
+            </div>
+            <div class="sdg-item">
+                <div class="sdg-number">4</div>
+                <h4>Educação de Qualidade</h4>
+            </div>
+            <div class="sdg-item">
+                <div class="sdg-number">5</div>
+                <h4>Igualdade de Gênero</h4>
+            </div>
+            <div class="sdg-item">
+                <div class="sdg-number">6</div>
+                <h4>Água e Saneamento</h4>
+            </div>
+            <div class="sdg-item">
+                <div class="sdg-number">8</div>
+                <h4>Crescimento Económico</h4>
+            </div>
+            <div class="sdg-item">
+                <div class="sdg-number">10</div>
+                <h4>Redução das Desigualdades</h4>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="container">
+        <div class="section">
+            <h2 class="section-title">Nossos Projetos</h2>
+            <p class="section-subtitle">Conheça algumas das iniciativas que estão a transformar vidas em Moçambique e
+                não só</p>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">🍽️</div>
+                        <h3>Alimentar as Crianças</h3>
+                    </div>
+                    <div class="project-body">
+                        <p>Apoiámos 12 famílias vulneráveis durante 10 meses na pandemia de COVID-19 com necessidades
+                            básicas.</p>
+                        <span class="project-tag">Pandemia COVID-19</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">🏠</div>
+                        <h3>Iniciativa Escola em Casa</h3>
+                    </div>
+                    <div class="project-body">
+                        <p>Proporcionámos apoio educacional a mais de 25 crianças sem recursos para ensino à distância.
+                        </p>
+                        <span class="project-tag">Educação Pandémica</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">🎄</div>
+                        <h3>Festa de Natal</h3>
+                    </div>
+                    <div class="project-body">
+                        <p>Programa de alcance comunitário em Maputo que doou alimentos e presentes a 50 crianças
+                            carenciadas.</p>
+                        <span class="project-tag">Dezembro 2021</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">💝</div>
+                        <h3>Salvar Danilo Santos</h3>
+                    </div>
+                    <div class="project-body">
+                        <p>Mobilizámos fundos de doadores para apoiar a família Santos e acompanhar o tratamento médico.
+                        </p>
+                        <span class="project-tag">Ação Médica</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">🤝</div>
+                        <h3>Companheiros da Comunidade</h3>
+                    </div>
+                    <div class="project-body">
+                        <p>Campanha colaborativa para erradicar a situação de sem-abrigo e a fome em Moçambique.</p>
+                        <span class="project-tag">Desde 2023</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Help & Forms Section -->
+    <section id="help" class="help-section">
+        <div class="help-content">
+            <h2>Como Pode Ajudar</h2>
+            <p>Juntos, podemos reacender a esperança e transformar vidas</p>
+
+            <div class="forms-container">
+                <!-- Volunteer/Contact Toggle Actions (Simplified for improved UX) -->
+                <div class="action-cards-grid">
+                    <div class="action-card"
+                        onclick="document.getElementById('volunteer-form').scrollIntoView({behavior: 'smooth'})">
+                        <div class="action-icon">🙋</div>
+                        <h3>Seja Voluntário</h3>
+                        <p>Junte-se à nossa equipa no terreno.</p>
+                    </div>
+                    <div class="action-card" onclick="openDonateModal()">
+                        <div class="action-icon">💰</div>
+                        <h3>Faça uma Doação</h3>
+                        <p>Apoie financeiramente os nossos projetos.</p>
+                    </div>
+                    <div class="action-card"
+                        onclick="document.getElementById('contact-form').scrollIntoView({behavior: 'smooth'})">
+                        <div class="action-icon">📩</div>
+                        <h3>Fale Connosco</h3>
+                        <p>Dúvidas ou parcerias? Envie uma mensagem.</p>
+                    </div>
+                </div>
+
+                <div class="forms-grid">
+                    <!-- Volunteer Form -->
+                    <div class="form-box" id="volunteer-form">
+                        <h3>Ficha de Inscrição de Voluntário</h3>
+                        <form id="volunteerForm">
+                            <div class="form-group">
+                                <label for="vol-name">Nome Completo</label>
+                                <input type="text" id="vol-name" required placeholder="Seu nome">
+                            </div>
+                            <div class="form-group">
+                                <label for="vol-email">Email</label>
+                                <input type="email" id="vol-email" required placeholder="seu@email.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="vol-phone">Telefone / WhatsApp</label>
+                                <input type="tel" id="vol-phone" required placeholder="+258 ...">
+                            </div>
+                            <div class="form-group">
+                                <label for="vol-area">Área de Interesse</label>
+                                <select id="vol-area">
+                                    <option value="education">Educação</option>
+                                    <option value="health">Saúde</option>
+                                    <option value="events">Organização de Eventos</option>
+                                    <option value="logistics">Logística</option>
+                                    <option value="other">Outro</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="btn btn-secondary submit-btn">Enviar Inscrição</button>
+                        </form>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <div class="form-box" id="contact-form">
+                        <h3>Entre em Contacto</h3>
+                        <form id="contactForm">
+                            <div class="form-group">
+                                <label for="con-name">Nome</label>
+                                <input type="text" id="con-name" required placeholder="Seu nome">
+                            </div>
+                            <div class="form-group">
+                                <label for="con-email">Email</label>
+                                <input type="email" id="con-email" required placeholder="seu@email.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="con-message">Mensagem</label>
+                                <textarea id="con-message" rows="4" required
+                                    placeholder="Como podemos ajudar?"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-secondary submit-btn">Enviar Mensagem</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-logo">Grace Hope Initiative</div>
+        <p>Maputo, Moçambique</p>
+        <p style="margin-top: 0.5rem;">Reacendendo a esperança para Moçambique</p>
+        <p class="footer-quote">"Juntos, podemos reacender a esperança e transformar vidas."</p>
+        <p style="margin-top: 1.5rem; font-size: 0.8rem;">&copy; 2026 Grace Hope Initiative. Todos os direitos
+            reservados.</p>
+    </footer>
+
+    <!-- Donation Modal -->
+    <div id="donateModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Faça a sua Doação</h2>
+            <p>Escolha o método de pagamento preferido para apoiar a nossa causa.</p>
+
+            <div class="payment-options">
+                <div class="payment-option mpesa">
+                    <h4>M-Pesa / E-Mola</h4>
+                    <p class="highlight">
+                        84 123 4567 / 82 123 4567
+                        <button class="copy-btn" onclick="copyToClipboard('841234567')" title="Copiar">
+                            <i class="fas fa-copy"></i>
+                        </button>
+                    </p>
+                    <small>Nome: Grace Hope Initiative</small>
+                </div>
+                <div class="payment-option bank">
+                    <h4>Transferência Bancária</h4>
+                    <p><strong>Banco:</strong> Millennium BIM</p>
+                    <p>
+                        <strong>NIB:</strong> <span id="nib">0001 2345 6789 0123 4567 8</span>
+                        <button class="copy-btn" onclick="copyToClipboard('000123456789012345678')" title="Copiar">
+                            <i class="fas fa-copy"></i>
+                        </button>
+                    </p>
+                    <small>Titular: Grace Hope Initiative</small>
+                </div>
+            </div>
+            <p style="margin-top: 1rem; font-size: 0.9rem; color: #666;">Por favor, envie o comprovativo para
+                <strong>financeiro@ghi.org.mz</strong>
+            </p>
+        </div>
+    </div>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top" title="Voltar ao topo">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Libraries -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+    <script src="js/script.js" defer></script>
+</body>
+
+</html>
