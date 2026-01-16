@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GHI Admin - Histórias</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="css/admin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body class="admin-dashboard-body">
+
+    <!-- Sidebar -->
+    <div class="admin-sidebar">
+        <div class="sidebar-header">
+            <img src="../assets/images/logo.png" alt="Logo">
+            <h3>GHI Admin</h3>
+        </div>
+        <ul class="sidebar-menu">
+            <li><a href="dashboard.html"><i class="fas fa-chart-pie"></i> Visão Geral</a></li>
+            <li><a href="dashboard.html"><i class="fas fa-envelope"></i> Mensagens</a></li>
+            <li class="active"><a href="#"><i class="fas fa-newspaper"></i> Histórias</a></li>
+            <li><a href="#" class="logout-btn" onclick="logout()"><i class="fas fa-sign-out-alt"></i> Sair</a></li>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="admin-content">
+        <header class="admin-header">
+            <h2>Gestão de Histórias</h2>
+            <button class="btn btn-primary" onclick="openStoryModal()">
+                <i class="fas fa-plus"></i> Nova História
+            </button>
+        </header>
+
+        <!-- Stories Grid -->
+        <div class="stories-grid" id="storiesGrid">
+            <!-- Stories will be loaded here -->
+            <p>Carregando histórias...</p>
+        </div>
+    </div>
+
+    <!-- Add/Edit Modal -->
+    <div id="storyModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeStoryModal()">&times;</span>
+            <h2 id="modalTitle">Nova História</h2>
+            <form id="storyForm">
+                <input type="hidden" id="storyId">
+
+                <div class="form-group">
+                    <label>Título</label>
+                    <input type="text" id="storyTitle" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Imagem</label>
+                    <input type="file" id="storyImage" accept="image/*">
+                    <input type="hidden" id="storyImageUrl">
+                    <div id="imagePreview"></div>
+                </div>
+
+                <div class="form-group">
+                    <label>Descrição (Antes)</label>
+                    <textarea id="storyDesc" rows="3" required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label>Resultado (Depois)</label>
+                    <textarea id="storyResult" rows="3" required></textarea>
+                </div>
+
+                <div class="form-groups-row">
+                    <div class="form-group">
+                        <label>Categoria</label>
+                        <select id="storyCategory">
+                            <option value="education">Educação</option>
+                            <option value="health">Saúde</option>
+                            <option value="empowerment">Empoderamento</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Data</label>
+                        <input type="date" id="storyDate">
+                    </div>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-full">Salvar História</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Firebase SDKs -->
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-storage-compat.js"></script>
+
+    <!-- Config & Logic -->
+    <script src="../js/firebase-config.js"></script>
+    <script src="js/admin.js"></script>
+    <script>
+        // Check Auth
+        firebase.auth().onAuthStateChanged((user) => {
+            if (!user) window.location.href = 'login.html';
+            else loadStories(); // Load stories if auth
+        });
+    </script>
+</body>
+
+</html>

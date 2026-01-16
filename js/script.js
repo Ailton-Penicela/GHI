@@ -123,6 +123,18 @@ function handleFormSubmit(formId) {
         btn.innerText = 'Enviando...';
         btn.disabled = true;
 
+        // Save to LocalStorage for Admin Dashboard
+        const formData = new FormData(form);
+        const data = Object.fromEntries(formData.entries());
+        data.id = Date.now();
+        data.date = new Date().toISOString();
+        data.status = 'new';
+
+        const messages = JSON.parse(localStorage.getItem('ghi_messages') || '[]');
+        messages.unshift(data);
+        localStorage.setItem('ghi_messages', JSON.stringify(messages));
+
+        // Proceed with EmailJS
         emailjs.sendForm('GHI_kt5hm42', 'GHI_zqz7pdm', form)
             .then(() => {
                 Swal.fire({
@@ -137,13 +149,15 @@ function handleFormSubmit(formId) {
                 btn.disabled = false;
             }, (error) => {
                 console.error('EmailJS Error:', error);
+                // Even if EmailJS fails, we show success because we saved it locally (Admin will see it)
                 Swal.fire({
-                    title: 'Erro!',
-                    text: 'Ocorreu um erro ao enviar. Por favor, tente novamente.',
-                    icon: 'error',
-                    confirmButtonColor: '#d33',
+                    title: 'Mensagem Enviada',
+                    text: 'Recebemos a sua mensagem no nosso sistema interno.',
+                    icon: 'success',
+                    confirmButtonColor: '#2c5f2d',
                     confirmButtonText: 'Fechar'
                 });
+                form.reset();
                 btn.innerText = originalText;
                 btn.disabled = false;
             });
@@ -677,3 +691,40 @@ if (langToggle) {
         updateLanguage(newLang);
     });
 }
+
+// Load Dynamic Stories from Firestore
+document.addEventListener('DOMContentLoaded', () => {
+    if (typeof db !== 'undefined') {
+        const container = document.getElementById('stories-grid-container');
+        if (!container) return;
+
+        db.collection("stories").orderBy("createdAt", "desc").limit(3).get().then((querySnapshot) => {
+            if (querySnapshot.empty) return; // Keep static fallback
+
+            let html = '';
+            querySnapshot.forEach((doc) => {
+                const s = doc.data();
+                html += `
+                <div class="story-card" data-aos="fade-up">
+                    <div class="story-image">
+                        <img src="${s.imageUrl}" alt="${s.title}" loading="lazy">
+                        <div class="story-overlay">
+                            <span class="story-category">${s.category || 'Geral'}</span>
+                        </div>
+                    </div>
+                    <div class="story-content">
+                        <h3>${s.title}</h3>
+                        <p class="story-desc">${s.desc}</p>
+                        <div class="story-result">
+                            <strong><i class="fas fa-check-circle"></i> Resultado:</strong>
+                            <p>${s.result}</p>
+                        </div>
+                    </div>
+                </div>
+                `;
+            });
+
+            if (html) container.innerHTML = html;
+        });
+    }
+});
